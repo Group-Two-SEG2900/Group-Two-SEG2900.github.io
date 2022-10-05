@@ -5,8 +5,8 @@
 Name: Sacha Arseneault
 Student #: 300152630
 
-#andrew
-hello
+Name: Andrew Guerette
+Student #: 300287614
 
 #callan
 amogus
