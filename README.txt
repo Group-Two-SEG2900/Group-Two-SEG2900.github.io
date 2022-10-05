@@ -8,8 +8,8 @@ Student #: 300152630
 Name: Andrew Guerette
 Student #: 300287614
 
-#callan
-amogus
+Name: Callan Underwood
+Student #: 300152504
 
 Name: Tarek Jabi
 Student #: 300058308
