@@ -4,6 +4,7 @@
 
 Name: Sacha Arseneault
 Student #: 300152630
+Username: xsachax
 
 Name: Andrew Guerette
 Student #: 300287614
