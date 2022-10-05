@@ -19,3 +19,7 @@ Username: JTar10
 Name: Xavier Lermusieaux
 Student #: 300152646
 Username: Egzavyer
+
+Name: Sebastian D'Aoust
+Student #: 300244750
+Username: SebD146
