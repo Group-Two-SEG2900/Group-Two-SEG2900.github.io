@@ -2,8 +2,8 @@
 
 
 
-#sacha
-hello
+Name: Sacha Arseneault
+Student #: 300152630
 
 #andrew
 hello
