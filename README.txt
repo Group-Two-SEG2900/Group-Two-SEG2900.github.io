@@ -11,8 +11,9 @@ Student #: 300287614
 #callan
 amogus
 
-#tarek
-hello
+Name: Tarek Jabi
+Student #: 300058308
+Username: JTar10
 
 Name: Xavier Lermusieaux
 Student #: 300152646
