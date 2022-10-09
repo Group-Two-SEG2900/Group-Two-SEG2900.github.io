@@ -1,5 +1,9 @@
 # SEG2900_project\
 
+Name: YOUtrient
+
+Description: A meal subscription service shaped around client preferences and dietary restrictions
+where users can customize amounts of prefered macronutrients and receive custom meals.
 
 
 Name: Sacha Arseneault
@@ -8,9 +12,11 @@ Username: xsachax
 
 Name: Andrew Guerette
 Student #: 300287614
+Username: Andyw00h00
 
 Name: Callan Underwood
 Student #: 300152504
+Username: callanu
 
 Name: Tarek Jabi
 Student #: 300058308
