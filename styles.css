@@ -1,3 +1,19 @@
+:root {
+    --beige: #edd8b3ff;
+    --lightbeige: #f2e2c9ff;
+    --green: #466c14ff;
+    --lightgreen: #689c23ff;
+    --verylightgreen: #a5ff8c;
+    --pukegreen: #5a670aff;
+    --maybeorange: rgb(187, 100, 12);
+    --darkgreen: rgb(19, 50, 3);
+}
+
 body {
-    color: black;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
