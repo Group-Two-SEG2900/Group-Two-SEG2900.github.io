@@ -108,7 +108,9 @@ h5 {font-size: 0.5vw;}
 .reviews_section {
     height: 80vh;
 }
-
+.stars {
+  width: 100px;
+}
 /*--------- ABOUT SECTION ---------*/
 .about_section {
     height: 80vh;
