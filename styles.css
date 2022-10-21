@@ -111,6 +111,9 @@ h5 {font-size: 0.5vw;}
 /*--------- ABOUT SECTION ---------*/
 .about_section {
     height: 80vh;
+    h2 {
+      text-align: center;
+    }
 }
 /*--------- CONTACT SECTION ---------*/
 .contact_section {
