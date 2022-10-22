@@ -1,3 +1,2 @@
-var a = 1;
-
-document.write(new Date().getFullYear());
+//Year to Date calculator
+document.getElementById("yearToDate").innerHTML = "Youtrient " + new Date().getFullYear();
