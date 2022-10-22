@@ -112,9 +112,17 @@ h5 {font-size: 0.5vw;}
 .about_section {
     height: 80vh;
 }
+.about_section td, tr {
+  text-align: center;
+  align-items: center;
+}
 /*--------- CONTACT SECTION ---------*/
 .contact_section {
     height: 65vh;
+}
+.contact_section table {
+    margin-left: auto;
+    margin-right: auto;
 }
 /*--------- FOOTER SECTION ---------*/
 .footer_section {
