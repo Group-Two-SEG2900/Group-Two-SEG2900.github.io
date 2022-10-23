@@ -35,7 +35,7 @@ body {
 /*--------- NAVBAR SECTION ---------*/
 
 .navbar {
-    height: 77px;
+    height: 6.8vw;
     z-index: 999;
     background-color: var(beige);
 }
@@ -45,13 +45,13 @@ body {
         background-color:var(beige);
         border:2px solid black;
         color:black;
-        padding:19px 25px;
+        padding:2vw 3vw;
         vertical-align:10px;
         text-decoration:none;
         font-weight: bold;
-        font-size:30px;
-        font-family:"Montserrat";
-        float:left;
+        font-size:2vw;
+        float:right;
+        transition: 0.2s all;
     }
 
  .navbar a:hover, a:active {
@@ -161,6 +161,32 @@ body {
 .how_container p {
   width: 200px;
   margin: 0 auto;
+}
+
+/*--------- Pricing SECTION ---------*/
+
+.pricing_section {
+  display:flex;
+  flex-direction: column;
+  height: 80vh;
+  text-align:center;
+  padding: 70px 5px;
+}
+
+.pricing_container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+
+}
+.pricing_container table {
+  border:1px solid black;
+  margin:1%;
+}
+.pricing_container td {
+  font-size:25px;
+  border:1px solid black;
 }
 
 /*--------- PLAN SECTION ---------*/
