@@ -38,10 +38,30 @@ h5 {font-size: 0.5vw;}
 /*--------- NAVBAR SECTION ---------*/
 
 .navbar {
-    height: 75px;
+    height: 77px;
     z-index: 999;
     background-color: var(beige);
 }
+
+.navbar a:link, a:visited {
+			
+        background-color:var(beige);
+        border:2px solid black;
+        color:black;
+        padding:19px 25px;
+        vertical-align:10px;
+        text-decoration:none;
+        font-weight: bold;
+        font-size:30px;
+        font-family:"Montserrat";
+        float:left;
+    }
+
+ .navbar a:hover, a:active {
+     background-color:blue;
+     color:white;
+ }
+
 
 /*--------- MAIN SECTION ---------*/
 
