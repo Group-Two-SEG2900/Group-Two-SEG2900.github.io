@@ -148,8 +148,20 @@ body {
     height: 80vh;
 }
 /*--------- REVIEWS SECTION ---------*/
+
 .reviews_section {
-    height: 80vh;
+  height: 80vh;
+}
+.stars {
+width: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }
 /*--------- ABOUT SECTION ---------*/
 .about_section {
