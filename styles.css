@@ -11,29 +11,26 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    color: black;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
 
-  @font-face {
-    font-family: "Montserrat";
-    src: url(fonts/montserrat.ttf);
-  }
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/montserrat.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     max-width: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     background-color: var(--lightbeige);
 }
-
-h1 {font-size: 3.5vw;}
-h2 {font-size: 2.5vw;}
-h3 {font-size: 1.5vw;}
-h4 {font-size: 1.0vw;}
-h5 {font-size: 0.5vw;}
 
 /*--------- NAVBAR SECTION ---------*/
 
@@ -78,7 +75,12 @@ h5 {font-size: 0.5vw;}
     background-position-y: 70%;
     background-size: 100vw;
     width: 100%;
+}
 
+@media screen and (max-width: 1000px) {
+  .main_section {
+    background-size: 200vw;
+}
 }
 
 .main_container {
@@ -118,8 +120,49 @@ h5 {font-size: 0.5vw;}
 
 /*--------- HOW SECTION ---------*/
 .how_section {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 5px;
 }
+
+.how_header h1 {
+  margin-bottom: 5px;
+}
+
+.how_container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-self: center;
+  margin: 15px auto;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .how_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.how_container img {
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
+
+.how_container h3 {
+  margin-bottom: 5px;
+}
+
+.how_container p {
+  width: 200px;
+  margin: 0 auto;
+}
+
 /*--------- PLAN SECTION ---------*/
 .plan_section {
     height: 80vh;
@@ -132,9 +175,17 @@ h5 {font-size: 0.5vw;}
 .about_section {
     height: 80vh;
 }
+.about_section td, tr {
+  text-align: center;
+  align-items: center;
+}
 /*--------- CONTACT SECTION ---------*/
 .contact_section {
     height: 65vh;
+}
+.contact_section table {
+    margin-left: auto;
+    margin-right: auto;
 }
 /*--------- FOOTER SECTION ---------*/
 .footer_section {
