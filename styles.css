@@ -140,6 +140,10 @@ body {
   flex-wrap: wrap;
 }
 
+.how_container img {
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1000px) {
   .how_container {
     display: flex;
