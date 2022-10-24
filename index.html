@@ -176,81 +176,88 @@
 		<!--PLAN + DROPDOWN-->
 		<!--SEBASTIAN + XAVIER + TAREK + SACHA-->
 		<div class="plan_section" id="plan">
-			<h1>Make <em>your</em> meal plan today!</h1>
+			<p class="mplanhead">Make <em class="mplanhead">your</em> meal plan today!</p>
 
-			<h2>Choose your goals</h2>
+			<h3>Choose your goals</h3>
+			<div class="goals">
+				<label for="goals">I want to:</label>
+				<select name="goals" id="goals">
+					<option value="build muscle">Gain weight</option>
+					<option value="lose weight">Lose weight</option>
+					<option value="no goals">Maintain weight</option>
+				</select>
+	
+				<label for="formula">Formula</label>
+				<select name="formula" id="formula">
+					<option value="normal">Normal</option>
+					<option value="lean">Lean mass</option>
+				</select>
+			</div>
+			
 
-			<label for="goals">I want to:</label>
-			<select name="goals" id="goals">
-				<option value="build muscle">Gain weight</option>
-				<option value="lose weight">Lose weight</option>
-				<option value="no goals">Maintain weight</option>
-			</select>
+			<h3>Dietary restictions</h3>
+			<div class="diet">
+				<label for="diet">Diet or restrictions:</label>
+				<select name="diet" id="diet">
+					<option value="vegan">Vegan</option>
+					<option value="vegetarian">Vegetarian</option>
+					<option value="keto">Keto</option>
+					<option value="lactose intolerant">Lactose intolerant</option>
+					<option value="gluten free">Gluten free</option>
+					<option value="no restrictions">No restrictions</option>
+				</select>
+			</div>
+			
 
-			<label for="formula">Formula</label>
-			<select name="formula" id="formula">
-				<option value="normal">Normal</option>
-				<option value="lean">Lean mass</option>
-			</select>
+			<h3>More info</h3>
 
-			<h2>Dietary restictions</h2>
-
-			<label for="diet">Diet or restrictions:</label>
-			<select name="diet" id="diet">
-				<option value="vegan">Vegan</option>
-				<option value="vegetarian">Vegetarian</option>
-				<option value="keto">Keto</option>
-				<option value="lactose intolerant">Lactose intolerant</option>
-				<option value="gluten free">Gluten free</option>
-				<option value="no restrictions">No restrictions</option>
-			</select>
-
-			<h2>More info</h2>
-
-			<label for="gender">Sex at Birth</label>
-			<select name="gender" id="gender">
-				<option value="male">Male</option>
-				<option value="female">Female</option>
-			</select>
-
-			<label for="age">Age:</label>
-			<input type="text" id="age" age="Age" placeholder="your age" />
-
-			<label for="wunit">Unit</label>
-			<select name="wunit" id="wunit">
-				<option value="kg">Kilos</option>
-				<option value="lbs">Pounds</option>
-			</select>
-
-			<label for="weight">Weight:</label>
-			<input
-				type="text"
-				id="weight"
-				weight="Weight"
-				placeholder="your weight"
-			/>
-
-			<label for="hunit">Unit</label>
-			<select name="hunit" id="hunit">
-				<option value="ft">Feet</option>
-				<option value="cm">cm</option>
-			</select>
-
-			<label for="height">Height:</label>
-			<input
-				type="text"
-				id="height"
-				height="Height"
-				placeholder="your height"
-			/>
-
-			<label for="activity">Activity level</label>
-			<select name="activity" id="activity">
-				<option value="sedentary">Sedentary</option>
-				<option value="light">Light activity</option>
-				<option value="moderate">Moderate activity</option>
-				<option value="active">Very active</option>
-			</select>
+			<div class="info">
+				<label for="gender">Sex at Birth</label>
+				<select name="gender" id="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+	
+				<label for="age">Age:</label>
+				<input type="text" id="age" age="Age" placeholder="your age" />
+	
+				<label for="wunit">Unit</label>
+				<select name="wunit" id="wunit">
+					<option value="kg">Kilos</option>
+					<option value="lbs">Pounds</option>
+				</select>
+	
+				<label for="weight">Weight:</label>
+				<input
+					type="text"
+					id="weight"
+					weight="Weight"
+					placeholder="your weight"
+				/>
+	
+				<label for="hunit">Unit</label>
+				<select name="hunit" id="hunit">
+					<option value="ft">Feet</option>
+					<option value="cm">cm</option>
+				</select>
+	
+				<label for="height">Height:</label>
+				<input
+					type="text"
+					id="height"
+					height="Height"
+					placeholder="your height"
+				/>
+	
+				<label for="activity">Activity level</label>
+				<select name="activity" id="activity">
+					<option value="sedentary">Sedentary</option>
+					<option value="light">Light activity</option>
+					<option value="moderate">Moderate activity</option>
+					<option value="active">Very active</option>
+				</select>
+			</div>
+			<button type="button">Make my plan!</button>
 		</div>
 		<hr />
 		<!--REVIEWS-->
