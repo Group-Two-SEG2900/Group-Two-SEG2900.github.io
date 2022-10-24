@@ -269,11 +269,14 @@ body {
     height: 80vh;
 }
 
+
+/*
 p.mplanhead{
   font-size: 300%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
+
 
 select, button{
   margin-top: 5px;
@@ -305,6 +308,7 @@ h3{
   margin-bottom: 20px;
 }
 
+
 div.goals{
   margin-left: 30%;
   margin-right: 30%;
@@ -319,6 +323,7 @@ div.info{
   margin-left: 20%;
   margin-right: 15%;
 }
+*/
 /*--------- REVIEWS SECTION ---------*/
 
 .reviews_section {
