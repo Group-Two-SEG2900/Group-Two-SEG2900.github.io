@@ -362,3 +362,7 @@ width: 100px;
 .footer_section {
     height: 30vh;
 }
+
+.footer_column {
+  display: flex;
+}
