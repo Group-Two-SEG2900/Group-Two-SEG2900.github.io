@@ -342,7 +342,8 @@ width: 100px;
 }
 /*--------- ABOUT SECTION ---------*/
 .about_section {
-    height: 80vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 .about_section td, tr {
   text-align: center;
@@ -350,7 +351,8 @@ width: 100px;
 }
 /*--------- CONTACT SECTION ---------*/
 .contact_section {
-    height: 65vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 .contact_section table {
     margin-left: auto;
