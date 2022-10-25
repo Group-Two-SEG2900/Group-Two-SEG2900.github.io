@@ -289,7 +289,6 @@ body {
 }
 
 /*--------- SELECT SECTION ---------*/
-
 .select {
   overflow-x: hidden;
   background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
@@ -395,20 +394,73 @@ body {
   margin-bottom: 25px;
 }
 
-
 /*--------- PLAN SECTION ---------*/
 .plan_section {
   height: 80vh;
 }
 
-p.mplanhead {
-  font-size: 300%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.hselect{
   text-align: center;
+  font-size: 300%;
+  margin-bottom: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.shead{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-.dropdown,
+div.slidercontainer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.selectorslider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 100%; /* Full-width */
+  height: 20px; /* Specified height */
+  border-radius: 10px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.selectorslider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 12.5px;
+  background: #689c23ff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.selectorslider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.selectorslider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #689c23ff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+div.button{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 150px;
+}
+
 .mpbutton {
   border-radius: 5px;
   margin-top: 5px;
@@ -420,7 +472,71 @@ p.mplanhead {
   height: 50px;
   width: 150px;
   font-size: large;
+  color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mpbutton:hover {
+  background-color: rgb(121, 214, 0);
+}
+/*--------- PLAN SECTION ---------*/
+.plan_section {
+  height: 80vh;
+}
+
+p.mplanhead {
+  font-size: 300%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+/* Style The Dropdown Button */
+.dropdown {
+  background-color: #689c23ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2e2c9ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #edd8b3ff}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover {
+  background-color:  #466c14ff;
 }
 
 .mplabel {
@@ -441,36 +557,18 @@ p.mplanhead {
   margin-bottom: 20px;
 }
 
-.dropdown:hover,
-.mpbutton:hover {
-  background-color: #466c14ff;
-}
-
-
 div.goals {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
-}
-
-div.diet {
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
+  width: 950px;
 }
 
 div.info {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 800px;
 }
 
-div.button{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  width: 150px;
-}
 /*--------- REVIEWS SECTION ---------*/
 
 .reviews_section {
@@ -496,6 +594,9 @@ width: 100px;
   text-align: center;
   align-items: center;
 }
+.about_section img {
+    border: 2px solid black;
+}
 /*--------- CONTACT SECTION ---------*/
 .contact_section {
   padding-top: 2vh;
@@ -504,6 +605,10 @@ width: 100px;
 .contact_section table {
     margin-left: auto;
     margin-right: auto;
+}
+.contact_section input {
+  border-color: var(--darkergreen);
+  background-color: #faf0d9;
 }
 /*--------- FOOTER SECTION ---------*/
 .footer_section {
