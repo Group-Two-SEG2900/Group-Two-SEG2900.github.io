@@ -267,21 +267,23 @@ body {
 
 /*--------- PLAN SECTION ---------*/
 .plan_section {
-    height: 80vh;
+  height: 80vh;
 }
 
-
-/*
-p.mplanhead{
+p.mplanhead {
   font-size: 300%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
 
 
-select, button{
+.dropdown,
+.mpbutton {
+  border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: #689c23ff;
   border: 2px solid #5a670aff;
   height: 50px;
@@ -290,18 +292,17 @@ select, button{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button{
-  margin-left: 45%;
-  margin-right: 50%;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-label{
+.mplabel {
   font-size: large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h3{
+.mpinput {
+  width: 75px;
+  height: 25px;
+}
+
+.mph3 {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: x-large;
@@ -309,22 +310,36 @@ h3{
   margin-bottom: 20px;
 }
 
-
-div.goals{
-  margin-left: 30%;
-  margin-right: 30%;
+.dropdown:hover,
+.mpbutton:hover {
+  background-color: #466c14ff;
 }
 
-div.diet{
-  margin-left: 37%;
-  margin-right: 37%;
+
+div.goals {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
 }
 
-div.info{
-  margin-left: 20%;
-  margin-right: 15%;
+div.diet {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
-*/
+
+div.info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+
+div.button{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 150px;
+}
 /*--------- REVIEWS SECTION ---------*/
 
 .reviews_section {
