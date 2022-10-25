@@ -425,6 +425,9 @@ width: 100px;
   text-align: center;
   align-items: center;
 }
+.about_section img {
+    border: 2px solid black;
+}
 /*--------- CONTACT SECTION ---------*/
 .contact_section {
   padding-top: 2vh;
