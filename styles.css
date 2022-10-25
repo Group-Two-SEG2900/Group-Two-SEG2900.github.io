@@ -314,7 +314,7 @@ div.slidercontainer{
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
   border-radius: 12.5px;
-  background: #04AA6D; /* Green background */
+  background: #689c23ff; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
@@ -325,7 +325,7 @@ div.slidercontainer{
 .selectorslider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #04AA6D; /* Green background */
+  background: #689c23ff; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
@@ -337,19 +337,6 @@ div.button{
   width: 150px;
 }
 
-/*--------- PLAN SECTION ---------*/
-.plan_section {
-  height: 80vh;
-}
-
-p.mplanhead {
-  font-size: 300%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-}
-
-
-.dropdown,
 .mpbutton {
   border-radius: 5px;
   margin-top: 5px;
@@ -361,7 +348,71 @@ p.mplanhead {
   height: 50px;
   width: 150px;
   font-size: large;
+  color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mpbutton:hover {
+  background-color: rgb(121, 214, 0);
+}
+/*--------- PLAN SECTION ---------*/
+.plan_section {
+  height: 80vh;
+}
+
+p.mplanhead {
+  font-size: 300%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+/* Style The Dropdown Button */
+.dropdown {
+  background-color: #689c23ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2e2c9ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #edd8b3ff}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover {
+  background-color:  #466c14ff;
 }
 
 .mplabel {
@@ -382,22 +433,16 @@ p.mplanhead {
   margin-bottom: 20px;
 }
 
-.dropdown:hover,
-.mpbutton:hover {
-  background-color: #466c14ff;
-}
-
-
 div.goals {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 950px;
 }
 
 div.info {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 800px;
 }
 
 /*--------- REVIEWS SECTION ---------*/
