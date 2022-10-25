@@ -265,6 +265,12 @@ body {
   border:1px solid black;
 }
 
+/*--------- SELECT SECTION ---------*/
+
+.select {
+  height: 70vh;
+}
+
 /*--------- PLAN SECTION ---------*/
 .plan_section {
   height: 80vh;
