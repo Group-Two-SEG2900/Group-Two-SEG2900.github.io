@@ -421,11 +421,11 @@ div.slidercontainer{
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   width: 100%; /* Full-width */
   height: 20px; /* Specified height */
   border-radius: 10px;
-  background: #d3d3d3; /* Grey background */
+  background: white; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -474,6 +474,24 @@ div.button{
   font-size: large;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slidertable2{
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slidertable{
+  width: 1145px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slidertablehead{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
 }
 
 .mpbutton:hover {
@@ -553,7 +571,7 @@ p.mplanhead {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: x-large;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -567,6 +585,12 @@ div.info {
   margin-left: auto;
   margin-right: auto;
   width: 800px;
+}
+
+div.mpw{
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
 }
 
 /*--------- REVIEWS SECTION ---------*/
