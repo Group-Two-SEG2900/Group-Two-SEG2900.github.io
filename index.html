@@ -180,21 +180,18 @@
 				desired portion sizes (in servings) for the listed prices.
 			</p>
 		</div>
-
 		<hr />
 		<!--SELECT SECTION BEFORE DROPDOWN-->
-		<div class="select">
-		</div>
+		<div class="select"></div>
 		<hr />
 		<!--PLAN + DROPDOWN-->
-		
-		<!--SEBASTIAN + XAVIER + TAREK + SACHA-->
+		<!--SEBASTIAN + TAREK + SACHA-->
 		<div class="plan_section" id="plan">
 			<p class="mplanhead">
 			  Make <em class="mplanhead">your</em> meal plan today!
 			</p>
 	  
-			<h3 class="mph3">Choose your goals</h3>
+			<h3 class="mph3">Choose your goals and Dietary restrictions</h3>
 			<div class="goals">
 			  <label for="goals" class="mplabel">I want to:</label>
 			  <select name="goals" class="dropdown">
@@ -208,10 +205,7 @@
 				<option value="normal">Normal</option>
 				<option value="lean">Lean mass</option>
 			  </select>
-			</div>
-	  
-			<h3 class="mph3">Dietary restictions</h3>
-			<div class="diet">
+
 			  <label for="diet" class="mplabel">Diet or restrictions:</label>
 			  <select name="diet" class="dropdown">
 				<option value="vegan">Vegan</option>
@@ -294,59 +288,27 @@
 				  </td>
 				</tr>
 			  </table>
-			  <!--
-			  <label for="gender" class="mplabel">Sex at Birth</label>
-					  <select name="gender" class="dropdown">
-					  <option value="male">Male</option>
-					  <option value="female">Female</option>
-					  </select>
-	  
-					  <label for="age" class="mplabel">Age:</label>
-					  <input type="text" id="age" age="Age" placeholder="your age" />
-	  
-					  <label for="wunit" class="mplabel">Unit</label>
-					  <select name="wunit" class="dropdown">
-					  <option value="kg">Kilos</option>
-					  <option value="lbs">Pounds</option>
-					  </select>
-	  
-					  <label for="weight" class="mplabel">Weight:</label>
-					  <input
-					  type="text"
-					  id="weight"
-					  weight="Weight"
-					  placeholder="your weight"
-					  />
-	  
-					  <label for="hunit" class="mplabel">Unit</label>
-					  <select name="hunit" class="dropdown">
-					  <option value="ft">Feet</option>
-					  <option value="cm">cm</option>
-					  </select>
-	  
-					  <label for="height" class="mplabel">Height:</label>
-					  <input
-					  type="text"
-					  id="height"
-					  height="Height"
-					  placeholder="your height"
-					  />
-	  
-					  <label for="activity" class="mplabel">Activity level</label>
-					  <select name="activity" class="dropdown">
-					  <option value="sedentary">Sedentary</option>
-					  <option value="light">Light activity</option>
-					  <option value="moderate">Moderate activity</option>
-					  <option value="active">Very active</option>
-					  </select>
-				  
-			  -->
-			</div>
-			<div class="button">
-			  <button type="button" class="mpbutton">Make my plan!</button>
 			</div>
 		  </div>
 		  <hr />
+		<!--SLIDERS-->
+		<!--SEBASTIAN-->
+		<div class="sliders">
+			<p class="hselect">Select protein</p>
+			<div class="slidercontainer">
+				<h3 class="shead">Chicken</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+			<h3 class="shead">Beef</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+			<h3 class="shead">Fish</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+			<h3 class="shead">Tofu</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+		</div>
+		<div class="button">
+			<button type="button" class="mpbutton">Make my plan!</button>
+		</div>
+		<hr />
 		<!--REVIEWS-->
 		<!--XAVIER-->
 		<div class="reviews_section">
