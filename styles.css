@@ -380,6 +380,10 @@ width: 100px;
     margin-left: auto;
     margin-right: auto;
 }
+.contact_section input {
+  border-color: var(--darkergreen);
+  background-color: #faf0d9;
+}
 /*--------- FOOTER SECTION ---------*/
 .footer_section {
     height: 30vh;
