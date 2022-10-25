@@ -10,11 +10,11 @@
 	</head>
 	<body>
 		<!--NAVBAR-->
-		<!--ANDREW-->
+		<!--SACHA-->
 		<nav class="navbar">
 		      <div class="nav_container">
 			<div class="nav_leftside">
-			  <a href="#top"><img src="images/placeholder.jpeg" alt="logo" height="60"></a>
+			  <a href="#top" class="logo"><img src="images/Youtrient_Logo_r1.png" class="logo_img" alt="logo" height="80" width="100"></a>
 			</div>
 			<div class="nav_rightside">
 			  <ul class="nav_menu">
@@ -22,7 +22,7 @@
 			      <a href="#how" class="nav_links">How it Works</a>
 			    </li>
 			    <li class="nav_item">
-			      <a href="#plan" class="nav_links">Build your plan</a>
+			      <a href="#select" class="nav_links">Build your plan</a>
 			    </li>
 			    <li class="nav_item">
 			      <a href="#contact" class="nav_links">Contact Us</a>
@@ -47,7 +47,7 @@
 		</div>
 		<hr />
 		<!--HOW-->
-		<!--ANDREW-->
+		<!--SACHA-->
 		<div class="how_section" id="how">
 			<div class="how_header">
 				<h1>How does it work?</h1>
@@ -77,6 +77,8 @@
 			</div>
 		</div>
 		<hr />
+		<!--PRICING-->
+		<!--ANDREW-->
 		<div class="pricing_section" id="price">
 			<br /><br />
 			<h1>Product Pricing (Per Serving)</h1>
@@ -172,100 +174,218 @@
 					</tr>
 				</table>
 			</div>
-			<br />
+			<br/>
 			<p>
 				See anything you like? You can add any and as much of these items as you
 				want! Choose what you think would fit best in your package and add your
 				desired portion sizes (in servings) for the listed prices.
 			</p>
 		</div>
-
+		<hr />
+		<!--SELECT SECTION BEFORE DROPDOWN-->
+		<!--SACHA-->
+		<div class="select" id="select">
+			<div class="select_header">
+				<h1>Don't know where to start</h1>
+				<h3>Start building one of your custom plans around one of our popular templates!</h3>
+			</div>
+			<div class="select_container">
+				<a>
+					<div class="meal_templates gainer">
+						<h3>The Gainer</h3>
+						<p>High Protein meal plan for users with large appetites</p>
+					</div>
+				</a>
+				<a>
+					<div class="meal_templates burner">
+						<h3>The Burner</h3>
+						<p>Low Calorie meal plan for healthy weight-loss</p>
+					</div>
+				</a>
+				<a>
+					<div class="meal_templates green_god">
+						<h3>The Green God</h3>
+						<p>Loaded with vitamins and minerals from extra greens</p>
+					</div>
+				</a>
+			</div>
+			<div class="select_footer">
+				<p>or</p>
+				<button class="main_button">Start from Scratch</button>
+			</div>
+		</div>
 		<hr />
 		<!--PLAN + DROPDOWN-->
-		<!--SEBASTIAN + XAVIER + TAREK + SACHA-->
+		<!--SEBASTIAN-->
 		<div class="plan_section" id="plan">
-			<p class="mplanhead">Make <em class="mplanhead">your</em> meal plan today!</p>
-
-			<h3>Choose your goals</h3>
+			<p class="mplanhead">
+			  Make <em class="mplanhead">your</em> meal plan today!
+			</p>
+	  
+			<h3 class="mph3">Choose your goals and Dietary restrictions</h3>
 			<div class="goals">
-				<label for="goals">I want to:</label>
-				<select name="goals" id="goals">
-					<option value="build muscle">Gain weight</option>
-					<option value="lose weight">Lose weight</option>
-					<option value="no goals">Maintain weight</option>
-				</select>
-	
-				<label for="formula">Formula</label>
-				<select name="formula" id="formula">
-					<option value="normal">Normal</option>
-					<option value="lean">Lean mass</option>
-				</select>
-			</div>
-			
+			  <label for="goals" class="mplabel">I want to:</label>
+			  <select name="goals" class="dropdown">
+				<option value="build muscle">Gain weight</option>
+				<option value="lose weight">Lose weight</option>
+				<option value="no goals">Maintain weight</option>
+			  </select>
 
-			<h3>Dietary restictions</h3>
-			<div class="diet">
-				<label for="diet">Diet or restrictions:</label>
-				<select name="diet" id="diet">
-					<option value="vegan">Vegan</option>
-					<option value="vegetarian">Vegetarian</option>
-					<option value="keto">Keto</option>
-					<option value="lactose intolerant">Lactose intolerant</option>
-					<option value="gluten free">Gluten free</option>
-					<option value="no restrictions">No restrictions</option>
-				</select>
-			</div>
-			
+			  <label for="formula" class="mplabel">Formula</label>
+			  <select name="formula" class="dropdown">
+				<option value="normal">Normal</option>
+				<option value="lean">Lean mass</option>
+			  </select>
 
-			<h3>More info</h3>
+			  <label for="diet" class="mplabel">Diet or restrictions:</label>
+			  <select name="diet" class="dropdown">
+				<option value="vegan">Vegan</option>
+				<option value="vegetarian">Vegetarian</option>
+				<option value="keto">Keto</option>
+				<option value="lactose intolerant">Lactose intolerant</option>
+				<option value="gluten free">Gluten free</option>
+				<option value="no restrictions">No restrictions</option>
+			  </select>
+			</div>
+
+			<h3 class="mph3">More info</h3>
 
 			<div class="info">
-				<label for="gender">Sex at Birth</label>
-				<select name="gender" id="gender">
-					<option value="male">Male</option>
-					<option value="female">Female</option>
-				</select>
-	
-				<label for="age">Age:</label>
-				<input type="text" id="age" age="Age" placeholder="your age" />
-	
-				<label for="wunit">Unit</label>
-				<select name="wunit" id="wunit">
-					<option value="kg">Kilos</option>
-					<option value="lbs">Pounds</option>
-				</select>
-	
-				<label for="weight">Weight:</label>
-				<input
-					type="text"
-					id="weight"
-					weight="Weight"
-					placeholder="your weight"
-				/>
-	
-				<label for="hunit">Unit</label>
-				<select name="hunit" id="hunit">
-					<option value="ft">Feet</option>
-					<option value="cm">cm</option>
-				</select>
-	
-				<label for="height">Height:</label>
-				<input
-					type="text"
-					id="height"
-					height="Height"
-					placeholder="your height"
-				/>
-	
-				<label for="activity">Activity level</label>
-				<select name="activity" id="activity">
-					<option value="sedentary">Sedentary</option>
-					<option value="light">Light activity</option>
-					<option value="moderate">Moderate activity</option>
-					<option value="active">Very active</option>
-				</select>
+			  <table>
+				<tr>
+				  <th><label for="gender" class="mplabel">Sex at Birth</label></th>
+				  <th><label for="age" class="mplabel">Age:</label></th>
+				  <th><label for="wunit" class="mplabel">Unit</label></th>
+				  <th><label for="weight" class="mplabel">Weight:</label></th>
+				  <th><label for="hunit" class="mplabel">Unit</label></th>
+				  <th><label for="height" class="mplabel">Height:</label></th>
+				  <th>
+					<label for="activity" class="mplabel">Activity level</label>
+				  </th>
+				</tr>
+				<tr>
+				  <td>
+					<select name="gender" class="dropdown">
+					  <option value="male">Male</option>
+					  <option value="female">Female</option>
+					</select>
+				  </td>
+				  <td>
+					<input
+					  type="text"
+					  id="age"
+					  class="mpinput"
+					  age="Age"
+					  placeholder="your age"
+					/>
+				  </td>
+				  <td>
+					<select name="wunit" class="dropdown">
+					  <option value="kg">Kilos</option>
+					  <option value="lbs">Pounds</option>
+					</select>
+				  </td>
+				  <td>
+					<input
+					  type="text"
+					  id="weight"
+					  class="mpinput"
+					  weight="Weight"
+					  placeholder="your weight"
+					/>
+				  </td>
+				  <td>
+					<select name="hunit" class="dropdown">
+					  <option value="ft">Feet</option>
+					  <option value="cm">cm</option>
+					</select>
+				  </td>
+				  <td>
+					<input
+					  type="text"
+					  id="height"
+					  class="mpinput"
+					  height="Height"
+					  placeholder="your height"
+					/>
+				  </td>
+				  <td>
+					<select name="activity" class="dropdown">
+					  <option value="sedentary">Sedentary</option>
+					  <option value="light">Light activity</option>
+					  <option value="moderate">Moderate activity</option>
+					  <option value="active">Very active</option>
+					</select>
+				  </td>
+				</tr>
+			  </table>
 			</div>
-			<button type="button">Make my plan!</button>
+			<div class="mpw">
+				<h3 class="mph3">Meals per week</h3>
+				<input type="range" min="1" max="14" value="7" class="selectorslider" id="myRange">
+				<table class="slidertable2">
+					<th class="slidertablehead">1</th>
+					<th class="slidertablehead">2</th>
+					<th class="slidertablehead">3</th>
+					<th class="slidertablehead">4</th>
+					<th class="slidertablehead">5</th>
+					<th class="slidertablehead">6</th>
+					<th class="slidertablehead">7</th>
+					<th class="slidertablehead">8</th>
+					<th class="slidertablehead">9</th>
+					<th class="slidertablehead">10</th>
+					<th class="slidertablehead">11</th>
+					<th class="slidertablehead">12</th>
+					<th class="slidertablehead">13</th>
+					<th class="slidertablehead">14</th>
+				</table>
+			</div>
+		  </div>
+		  <hr />
+		<!--SLIDERS-->
+		<!--SEBASTIAN-->
+		<div class="sliders">
+			<p class="hselect">Select protein</p>
+			<div class="slidercontainer">
+				<h3 class="shead">Chicken</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+				<table class="slidertable">
+					<th class="slidertablehead">none</th>
+					<th class="slidertablehead">some</th>
+					<th class="slidertablehead">average</th>
+					<th class="slidertablehead">more</th>
+					<th class="slidertablehead">max</th>
+				</table>
+			<h3 class="shead">Beef</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+				<table class="slidertable">
+					<th class="slidertablehead">none</th>
+					<th class="slidertablehead">some</th>
+					<th class="slidertablehead">average</th>
+					<th class="slidertablehead">more</th>
+					<th class="slidertablehead">max</th>
+				</table>
+			<h3 class="shead">Fish</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+				<table class="slidertable">
+					<th class="slidertablehead">none</th>
+					<th class="slidertablehead">some</th>
+					<th class="slidertablehead">average</th>
+					<th class="slidertablehead">more</th>
+					<th class="slidertablehead">max</th>
+				</table>
+			<h3 class="shead">Tofu</h3>
+				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
+				<table class="slidertable">
+					<th class="slidertablehead">none</th>
+					<th class="slidertablehead">some</th>
+					<th class="slidertablehead">average</th>
+					<th class="slidertablehead">more</th>
+					<th class="slidertablehead">max</th>
+				</table>
+		</div>
+		<div class="button">
+			<button type="button" class="mpbutton">Make my plan!</button>
 		</div>
 		<hr />
 		<!--REVIEWS-->
@@ -326,13 +446,13 @@
 				<tr>
 					<!-- Pictures -->
 					<td>
-						<img src="images/blank_portrait.png" alt="Portrait" width="60%"/>
+						<img src="images/sacha_about.png" alt="Portrait" width="60%"/>
 					</td>
 					<td>
-						<img src="images/blank_portrait.png" alt="Portrait" width="60%"/>
+						<img src="images/callan_about.png" alt="Portrait" width="60%"/>
 					</td>
 					<td>
-						<img src="images/blank_portrait.png" alt="Portrait" width="60%"/>
+						<img src="images/xavier_about.png" alt="Portrait" width="60%"/>
 					</td>
 				</tr>
 				<tr>
@@ -350,13 +470,13 @@
 				<tr>
 					<!-- Pictures -->
 					<td>
-						<img src="images/blank_portrait.png" alt="Portrait" width="60%"/>
+						<img src="images/andrew_about.png" alt="Portrait" width="60%"/>
 					</td>
 					<td>
-						<img src="images/blank_portrait.png" alt="Portrait" width="60%"/>
+						<img src="images/sebastian_about.png" alt="Portrait" width="60%"/>
 					</td>
 					<td>
-						<img src="images/blank_portrait.png" alt="Portrait" width="60%"/>
+						<img src="images/tarek_about.png" alt="Portrait" width="60%"/>
 					</td>
 				</tr>
 				<tr> <td> </td> </tr>
@@ -378,40 +498,67 @@
 			</p>
 			<table>
 				<tr>
-					<th><a href="mailto: youtrient@gmail.com">E-Mail</a></th>
-					<th>
-						<a href="https://instagram.com/officialrickastley/">Instagram</a>
-					</th>
-					<th><p>Call us: 123-456-7890</p></th>
+					<td> <input style="width:45%" type="text" name="Name" placeholder="Name..."> <input style="width:45%" type="text" name="email" placeholder=Email...> </td>
+				</tr>
+				<tr>
+					<td> <input style="height:100px; width:92%" type="textarea" name="info" placeholder="Share some thoughts!">
+				</tr>
+				<tr>
+					<td> <input style="padding:10px; text-align: center; background-color: var(--beige3);"type="button" name="submit" value="Submit">
 				</tr>
 			</table>
 		</div>
-		<hr />
+		<hr>
+
 		<!--FOOTER-->
 		<!--TAREK-->
-		<div class="footer_section">
-			<div class="footer_column">
-				<div>
-					<button><a href="#navbar">Navigation</a></button>
-					<button><a href="#how">How it works</a></button>
-					<button><a href="#plan">Meal planner</a></button>
-					<button><a href="#reviews">Reviews</a></button>
-					<button><a href="#about">About</a></button>
-					<button><a href="#contact">Contact us</a></button>
+		<div class="footer">
+			<div class="footer_section">
+				<div class="footer_column">
+					<table>
+						<tr><th colspan="2">Jump to</th></tr>
+						<tr>
+							<td><button><a href="#navbar">Navigation</a></button></td>
+							<td><button><a href="#how">How it works</a></button></td>
+						</tr>
+						<tr>
+							<td><button><a href="#plan">Meal planner</a></button></td>
+							<td><button><a href="#reviews">Reviews</a></button></td>
+						</tr>
+						<tr>
+							<td><button><a href="#about">About</a></button></td>
+							<td><button><a href="#contact">Contact us</a></button></td>
+						</tr>
+					</table>
+					<table class="extra">
+						<tr><th colspan="2">YouTrient</th></tr>
+						<tr>
+							<td><button>Gift Cards</button></td>
+							<td><button>Email Signup</button></td>
+						</tr>
+						<tr>
+							<td><button>Careers</button></td>
+							<td><button>FAQ</button></td></tr>
+						</tr>
+						<tr>
+							<td><button>Privacy Policy</button></td>
+							<td><button>Terms of Use</button></td>
+						</tr>
+					</table>
+					<div class="footer_row">
+						<div>
+							<img class="social_media" src="images/facebook.png">
+							<img class="social_media" src="images/instagram.png">
+							<img class="social_media" src="images/twitter.png">
+							<img class="social_media" src="images/youtube.png">
+						</div>
+						<div class="mobile">
+							<a href="https://www.apple.com/ca/app-store/%22%3E"><img src= "images/apple.png" alt="app store icon" width="175"></a>
+							<a href="https://play.google.com/store/games%22%3E"><img src="images/googleplay.png" width="175"></a>
+							<h4 id="yearToDate"></h4>
+						</div>
+					</div>
 				</div>
-				<div>
-					<button>Gift Cards</button>
-					<button>Email Signup</button>
-					<button>Careers</button>
-					<button>FAQ</button>
-					<button>Privacy Policy</button>
-					<button>Terms of Use</button>
-				</div>
-			</div>
-			<div class="footer_row">
-				<h4 id="yearToDate"></h4>
-				<h4>App Store</h4>
-				<h4>Google Play Store</h4>
 			</div>
 		</div>
 		<script src="main.js"></script>
