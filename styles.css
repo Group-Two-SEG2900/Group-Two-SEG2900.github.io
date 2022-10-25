@@ -48,6 +48,29 @@ body {
   position: sticky;
 }
 
+.nav_leftside {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.logo {
+  transform: translateY(20px);
+  z-index: 999;
+  background-color: var(--beige2);
+  border-radius: 10px;
+  box-shadow: 0 4px 2px -2px rgba(106, 106, 106, 0.5);
+}
+
+.logo_img {
+  opacity: 0.93;
+}
+
+.logo_img:hover {
+  opacity: 1;
+  transform: translateY(-0.5px);
+}
+
 .nav_rightside {
   display: flex;
   align-items: center;
@@ -267,12 +290,113 @@ body {
 
 /*--------- SELECT SECTION ---------*/
 .select {
-  height: 70vh;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+  url("images/cutting_board.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-x: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
 }
 
-/*--------- SLIDERS ---------*/
-.sliders {
-  height: 70vh;
+.select_header h1{
+  margin-bottom: 15px;
+}
+
+.select_header h3 {
+  margin-bottom: 15px;
+}
+
+.select_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.meal_templates {
+  margin: 2rem;
+  overflow-x: hidden;
+  height: 380px;
+  width: 280px;
+  z-index: 3;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  color: #fff;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.meal_templates:hover{
+  transform: scale(1.075);
+  cursor: pointer;
+}
+
+.meal_templates h3 {
+  text-align: center;
+  position: absolute;
+  width: 250px;
+  top: 300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.meal_templates p {
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  width: 250px;
+  top: 322px;
+  margin: 0 auto;
+  padding: 12px 15px;
+}
+.gainer {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url("/images/gainer.jpeg");
+}
+.burner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url("/images/burner.jpeg");
+}
+.green_god {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url("/images/green_god.jpeg");
+}
+.gainer h3 {background-color: salmon;}
+.gainer p {background-color: rgb(224, 109, 96);}
+.burner h3 {background-color: rgb(194, 194, 2);}
+.burner p {background-color: rgb(181, 181, 0);}
+.green_god h3 {background-color: rgb(71, 197, 71);}
+.green_god p {background-color: rgb(67, 186, 67);}
+
+.select_footer p{
+  margin-bottom: 25px;
+}
+
+/*--------- PLAN SECTION ---------*/
+.plan_section {
+  height: 80vh;
 }
 
 .hselect{
