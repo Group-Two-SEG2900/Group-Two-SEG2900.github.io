@@ -640,13 +640,14 @@ width: 100px;
   background-color: var(--beige2);
 }
 .footer_section {
-    height: 30vh;
+  height: 30vh;
 }
 
 .footer_column {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: var(--beige2);
 }
 
 .footer_column th {
@@ -666,7 +667,7 @@ width: 100px;
 }
 
 .footer_column button:hover {
-  color: var(--beige4);
+  color: green;
   text-decoration: underline;
 }
 
@@ -677,7 +678,7 @@ width: 100px;
 }
 
 .footer_column a:hover {
-  color: var(--beige4);
+  color: green;
   text-decoration: underline;
 }
 
@@ -701,5 +702,9 @@ width: 100px;
 }
 
 .mobile a {
+  margin: 20px;
+}
+
+.mobile h4 {
   margin: 20px;
 }
