@@ -599,16 +599,63 @@ div.mpw{
   height: 80vh;
 }
 .stars {
-width: 100px;
+width: 10vw;
 }
 
 .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15vw;
+  padding-right: 10vw;
 }
 
-.column {
-  flex: 50%;
+.row h2 {
+  font-size: 3vw;
 }
+
+.row h3 {
+  font-size: 2vw;
+}
+
+.reviews_column1 {
+  flex: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 15px;
+  width: 30vw;
+  background-color:  rgb(230, 207, 167);
+}
+
+.reviews_column1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.reviews_column2 {
+  flex: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 15px;
+  width: 30vw;
+  background-color:  rgb(230, 207, 167);
+}
+
+.reviews_column2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.reviews_content h1 {
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-size: 3.5vw;
+}
+
+.review_header {
+  padding-bottom: 1vh;
+}
+
 /*--------- ABOUT SECTION ---------*/
 .about_section {
     padding-top: 2vh;
