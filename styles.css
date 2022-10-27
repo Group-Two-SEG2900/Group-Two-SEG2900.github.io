@@ -599,7 +599,9 @@ div.mpw{
   height: 80vh;
 }
 .stars {
-width: 10vw;
+width: 20vw;
+padding-top: 1vh;
+padding-bottom: 1vh;
 }
 
 .row {
@@ -654,6 +656,13 @@ width: 10vw;
 
 .review_header {
   padding-bottom: 1vh;
+  background-color: rgb(214, 197, 167);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#ureview {
+  font-size: 14pt;
 }
 
 /*--------- ABOUT SECTION ---------*/
