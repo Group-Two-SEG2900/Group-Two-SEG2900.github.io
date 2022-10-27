@@ -596,7 +596,7 @@ div.mpw{
 /*--------- REVIEWS SECTION ---------*/
 
 .reviews_section {
-  height: 80vh;
+  height: 90vh;
 }
 .stars {
 width: 20vw;
@@ -663,6 +663,12 @@ padding-bottom: 1vh;
 
 #ureview {
   font-size: 14pt;
+}
+
+.user_review {
+  text-align: center;
+  padding-top: 8vh;
+  font-size: 4vh;
 }
 
 /*--------- ABOUT SECTION ---------*/
