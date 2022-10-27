@@ -607,8 +607,7 @@ padding-bottom: 1vh;
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 15vw;
-  padding-right: 10vw;
+  padding-left: 13vw;
 }
 
 .row h2 {
