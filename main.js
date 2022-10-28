@@ -1,3 +1,8 @@
+//SCROLL TO TOP ON REFRESH
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 //Year to Date calculator
 document.getElementById("yearToDate").innerHTML =
   "© YouTrient " + new Date().getFullYear();
@@ -25,3 +30,13 @@ appearOptions);
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
+
+
+// Enable dropdown section on click
+function toggleDisplay(id) { 
+  var el = document.getElementById(id);
+  if (el.style.display === "none") {
+    el.style.display = "block"
+    scroll
+  }
+}

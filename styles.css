@@ -156,7 +156,7 @@ body {
 /*--------- MAIN SECTION ---------*/
 
 .main_section {
-  height: 80vh;
+  height: 92vh;
   text-align: center;
   background-image: linear-gradient(
       to bottom,
@@ -170,9 +170,14 @@ body {
   width: 100%;
 }
 
+.main_section h1 {
+  margin-top: 12vw;
+  font-size: 45px;
+}
+
 @media screen and (max-width: 1000px) {
   .main_section {
-    background-size: 200vw;
+    background-size: 220vw;
     background-position: bottom;
   }
 }
@@ -267,7 +272,7 @@ body {
   flex-direction: column;
   height: 80vh;
   text-align: center;
-  padding: 70px 5px;
+  padding: 70px 10px;
 }
 
 .pricing_container {
@@ -276,18 +281,33 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .pricing_container table {
   border: 1px solid black;
   margin: 1%;
+  border-collapse: collapse;
+  background-color: var(--beige2);
 }
+
 .pricing_container td {
   font-size: 25px;
   border: 1px solid black;
+  padding: 5px;
 }
+
+.pricing_container tr {
+  transition-duration: 0.3s;
+}
+
+.pricing_container tr:hover {
+  background-color: var(--beige1);
+  transition-duration: 0.3s;
+}
+
 
 /*--------- SELECT SECTION ---------*/
 .select {
-  overflow-x: hidden;
+  overflow: hidden;
   background: linear-gradient(
       rgba(255, 255, 255, 0.15),
       rgba(255, 255, 255, 0.15)
@@ -303,8 +323,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   text-align: center;
+}
+
+.select_header {
+  margin-top: 50px;
 }
 
 .select_header h1 {
@@ -400,6 +423,10 @@ body {
 }
 .green_god p {
   background-color: rgb(67, 186, 67);
+}
+
+.select_footer {
+  margin-bottom: 50px;
 }
 
 .select_footer p {
@@ -751,13 +778,14 @@ div.mpw {
 }
 
 #ureview {
-  font-size: 14pt;
+  font-size: 1.12vw;
+  overflow: hidden;
 }
 
 .user_review {
   text-align: center;
   padding-top: 8vh;
-  font-size: 4vh;
+  font-size: 2vw;
 }
 
 /*--------- ABOUT SECTION ---------*/
