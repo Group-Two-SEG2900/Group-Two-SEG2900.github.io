@@ -270,9 +270,13 @@ body {
 .pricing_section {
   display: flex;
   flex-direction: column;
-  height: 80vh;
   text-align: center;
   padding: 70px 10px;
+}
+
+.pricing_section p {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .pricing_container {
@@ -292,7 +296,7 @@ body {
 .pricing_container td {
   font-size: 25px;
   border: 1px solid black;
-  padding: 5px;
+  padding: 7px;
 }
 
 .pricing_container tr {
