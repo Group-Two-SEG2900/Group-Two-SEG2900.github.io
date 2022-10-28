@@ -453,16 +453,31 @@ body {
 
 /*--------- SLIDER SECTION ---------*/
 .plan_section {
-  height: 80vh;
+  height: 60vh;
+}
+
+.sliderFlexContainer{
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  column-gap: 3rem;
+}
+
+.sliderFlexBoxOne{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sliderFlexBoxTwo{
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .mpBigContainer{
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   justify-items: center;
   column-gap: 5rem;
 }
@@ -564,11 +579,9 @@ div.slidercontainer {
 }
 
 .sliderLableMPW{
-  display: grid;
-  grid-template-columns: 14;
-  grid-template-rows: 1;
-  justify-content: space-evenly;
-  justify-items: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 3rem;
 }
 
@@ -577,11 +590,9 @@ div.slidercontainer {
 }
 
 .sliderLabelFood{
-  display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 1;
-  justify-content: space-evenly;
-  justify-items: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
@@ -617,8 +628,23 @@ div.button {
   background-color: rgb(121, 214, 0);
 }
 /*--------- PLAN SECTION ---------*/
-.plan_section {
-  height: 50vh;
+@media screen and (max-width: 800px){
+  .mpBigContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+
+  .plan_section{
+    height: 100vh;
+  }
+
+  .sliderFlexContainer{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 p.mplanhead {
@@ -697,18 +723,6 @@ p.mplanhead {
   font-size: x-large;
   margin-top: 50px;
   margin-bottom: 20px;
-}
-
-div.goals {
-  margin-left: auto;
-  margin-right: auto;
-  width: 950px;
-}
-
-div.info {
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
 }
 
 div.mpw {
