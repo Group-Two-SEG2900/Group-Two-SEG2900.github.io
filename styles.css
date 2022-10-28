@@ -696,13 +696,14 @@ div.mpw {
 }
 
 #ureview {
-  font-size: 14pt;
+  font-size: 1.12vw;
+  overflow: hidden;
 }
 
 .user_review {
   text-align: center;
   padding-top: 8vh;
-  font-size: 4vh;
+  font-size: 2vw;
 }
 
 /*--------- ABOUT SECTION ---------*/
