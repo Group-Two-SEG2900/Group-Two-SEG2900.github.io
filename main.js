@@ -25,3 +25,19 @@ appearOptions);
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
+
+
+/*Enable Dropdown section
+document.getElementByClassName("collapsible_button").addEventListener("click", function () {
+  getElementById("make_plan_dropdown").style.display === "block";
+});
+*/
+
+
+function toggleDisplay(id) { 
+  var el = document.getElementById(id);
+  if (el.style.display === "none") {
+    el.style.display = "block"
+    scroll
+  }
+}
