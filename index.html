@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTrient</title>
-
+    <link rel="icon" href="images/Youtrient_Logo_r1.png"/>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="animation/aos.css"/> <!--https://github.com/michalsnik/aos/tree/v2-->
   </head>
   <body>
     <!--NAVBAR-->
@@ -46,9 +47,9 @@
     <div class="main_section">
       <div class="main_container">
         <div class="main_content">
-          <h1><em>Your</em> Food, <em>Your</em> Way</h1>
-          <h3>Customize meal plans based on your eating goals and habits</h3>
-          <a href="#how"><button class="main_button">Get Started</button></a>
+          <h1 data-aos="zoom-in" data-aos-duration="1000"><em>Your</em> Food, <em>Your</em> Way</h1>
+          <h3 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">Customize meal plans based on your eating goals and habits</h3>
+          <a href="#how" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"><button class="main_button">Get Started</button></a>
         </div>
       </div>
     </div>
@@ -57,29 +58,29 @@
     <!--SACHA-->
     <div class="how_section" id="how">
       <div class="how_header">
-        <h1>How does it work?</h1>
-        <h4>From our farms directly to your plate</h4>
+        <h1 data-aos="zoom-in" data-aos-offset="50">How does it work?</h1>
+        <h4 data-aos="zoom-in">From our farms directly to your plate</h4>
       </div>
       <div class="how_container">
         <div class="card">
           <img src="images/Structure.jpg" alt="box1" />
-          <h3>Step 1</h3>
-          <p>Select a structure for your meal plan</p>
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 1</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Select a structure for your meal plan</p>
         </div>
         <div class="card">
           <img src="images/Customize.jpg" alt="box2" />
-          <h3>Step 2</h3>
-          <p>Customize it your way</p>
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 2</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Customize it your way</p>
         </div>
         <div class="card">
           <img src="images/Confirm.png" alt="box3" />
-          <h3>Step 3</h3>
-          <p>Finalize and confirm your order</p>
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 3</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Finalize and confirm your order</p>
         </div>
         <div class="card">
           <img src="images/Enjoy.jpg" alt="box4" />
-          <h3>Step 4</h3>
-          <p>Enjoy!</p>
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 4</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Enjoy!</p>
         </div>
       </div>
     </div>
@@ -87,14 +88,19 @@
     <!--SELECT SECTION BEFORE DROPDOWN-->
     <!--SACHA-->
     <div class="select" id="select">
+<<<<<<< HEAD
       <div class="select_header">
         <h1>Don't know where to start?</h1>
+=======
+      <div class="select_header" data-aos="fade-right" data-aos-duration="900" data-aos-offset="100">
+        <h1>Don't know where to start</h1>
+>>>>>>> fe90b5125b7ae8f26042a8f88e4c9fa376a79364
         <h3>
           Start building one of your custom plans around one of our popular
           templates!
         </h3>
       </div>
-      <div class="select_container">
+      <div class="select_container" data-aos="fade-right" data-aos-duration="900" data-aos-offset="100">
         <a>
           <div class="meal_templates gainer">
             <h3>The Gainer</h3>
@@ -114,7 +120,7 @@
           </div>
         </a>
       </div>
-      <div class="select_footer">
+      <div class="select_footer" data-aos="fade-up" data-aos-offset="-100" data-aos-duration="900">
         <p>or</p>
         <a href="#enable_dropdown"><button class="main_button" onclick="toggleDisplay('enable_dropdown')">Start from Scratch</button></a>
       </div>
@@ -681,5 +687,13 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="animation/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        duration: 1000,
+        offset: 150
+      }
+      );
+    </script>
   </body>
 </html>

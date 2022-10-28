@@ -171,13 +171,13 @@ body {
 }
 
 .main_section h1 {
-  margin-top: 15vh;
-  font-size: 7vh;
+  margin-top: 12vw;
+  font-size: 45px;
 }
 
 @media screen and (max-width: 1000px) {
   .main_section {
-    background-size: 200vw;
+    background-size: 220vw;
     background-position: bottom;
   }
 }
@@ -307,7 +307,7 @@ body {
 
 /*--------- SELECT SECTION ---------*/
 .select {
-  overflow-x: hidden;
+  overflow: hidden;
   background: linear-gradient(
       rgba(255, 255, 255, 0.15),
       rgba(255, 255, 255, 0.15)
@@ -323,8 +323,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   text-align: center;
+}
+
+.select_header {
+  margin-top: 50px;
 }
 
 .select_header h1 {
@@ -420,6 +423,10 @@ body {
 }
 .green_god p {
   background-color: rgb(67, 186, 67);
+}
+
+.select_footer {
+  margin-bottom: 50px;
 }
 
 .select_footer p {
