@@ -453,7 +453,7 @@ body {
 
 /*--------- SLIDER SECTION ---------*/
 .plan_section {
-  height: 60vh;
+  height: 50vh;
 }
 
 .sliderFlexContainer{
@@ -477,7 +477,7 @@ body {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
-  justify-content: space-evenly;
+  justify-content: center;
   justify-items: center;
   column-gap: 5rem;
 }
@@ -638,7 +638,7 @@ div.button {
   }
 
   .plan_section{
-    height: 100vh;
+    height: 90vh;
   }
 
   .sliderFlexContainer{
