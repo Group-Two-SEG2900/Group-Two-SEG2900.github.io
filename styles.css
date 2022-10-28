@@ -406,9 +406,60 @@ body {
   margin-bottom: 25px;
 }
 
-/*--------- PLAN SECTION ---------*/
+/*--------- SLIDER SECTION ---------*/
 .plan_section {
   height: 80vh;
+}
+
+.mpBigContainer{
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  column-gap: 5rem;
+}
+
+.mpContainer{
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 6;
+  align-content: center;
+  justify-content: left;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.mpContainerTwo{
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 8;
+  align-content: center;
+  justify-content: right;
+  row-gap: 10px;
+  column-gap: 10px
+}
+
+.boxOne, .mpBox{
+  grid-column: 2;
+}
+
+.boxTwo, .mpboxThree{
+  grid-column: 3;
+}
+
+.boxHead{
+  grid-column: 1 / 4;
+}
+
+.columnOne{
+  grid-column: 1;
+}
+
+.columnTwo{
+  grid-column: 2;
 }
 
 .hselect {
@@ -467,6 +518,34 @@ div.slidercontainer {
   cursor: pointer; /* Cursor on hover */
 }
 
+.sliderLableMPW{
+  display: grid;
+  grid-template-columns: 14;
+  grid-template-rows: 1;
+  justify-content: left;
+  justify-items: left;
+  column-gap: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.mpwLabel{
+  grid-row: 1;
+}
+
+.sliderLabelFood{
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 1;
+  justify-content: right;
+  justify-items: right;
+  margin-bottom: 1rem;
+  column-gap: 12.1rem;
+}
+
+.foodLabel{
+  grid-row: 1;
+}
+
 div.button {
   margin-left: auto;
   margin-right: auto;
@@ -491,31 +570,12 @@ div.button {
     "Lucida Sans", Arial, sans-serif;
 }
 
-.slidertable2 {
-  width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slidertable {
-  width: 1145px;
-  margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slidertablehead {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: left;
-}
-
 .mpbutton:hover {
   background-color: rgb(121, 214, 0);
 }
 /*--------- PLAN SECTION ---------*/
 .plan_section {
-  height: 80vh;
+  height: 50vh;
 }
 
 p.mplanhead {
@@ -611,7 +671,7 @@ div.info {
 div.mpw {
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
+  width: 60%;
 }
 
 /*--------- REVIEWS SECTION ---------*/
