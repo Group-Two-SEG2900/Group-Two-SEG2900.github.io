@@ -272,7 +272,7 @@ body {
   flex-direction: column;
   height: 80vh;
   text-align: center;
-  padding: 70px 5px;
+  padding: 70px 10px;
 }
 
 .pricing_container {
@@ -280,15 +280,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 .pricing_container table {
   border: 1px solid black;
   margin: 1%;
+  border-collapse: collapse;
+  background-color: var(--beige2);
+  
 }
 .pricing_container td {
   font-size: 25px;
   border: 1px solid black;
+  padding: 5px;
+  
 }
+
+.pricing_container tr:hover {
+  background-color: var(--beige1);
+  transition-duration: 0.3s;
+}
+
 
 /*--------- SELECT SECTION ---------*/
 .select {
@@ -703,13 +715,14 @@ div.mpw {
 }
 
 #ureview {
-  font-size: 14pt;
+  font-size: 1.12vw;
+  overflow: hidden;
 }
 
 .user_review {
   text-align: center;
   padding-top: 8vh;
-  font-size: 4vh;
+  font-size: 2vw;
 }
 
 /*--------- ABOUT SECTION ---------*/
