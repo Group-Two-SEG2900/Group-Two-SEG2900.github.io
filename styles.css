@@ -250,6 +250,20 @@ body {
   }
 }
 
+.card img {
+  border-radius: 5px;
+}
+
+.card img:hover{
+  transform: translateY(-4px);
+  transition: 0.15s;
+  cursor: pointer;
+
+}
+
+
+
+
 .how_container img {
   width: 200px;
   height: 250px;
@@ -707,9 +721,7 @@ div.mpw {
 
 /*--------- REVIEWS SECTION ---------*/
 
-.reviews_section {
-  height: 90vh;
-}
+
 .stars {
   width: 20vw;
   padding-top: 1vh;
@@ -723,11 +735,27 @@ div.mpw {
 }
 
 .row h2 {
-  font-size: 3vw;
+  font-size: 25px;
 }
 
 .row h3 {
-  font-size: 2vw;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row h2 {
+    font-size: 22px;
+  }
+  .row h3 {
+    font-size: 15px;
+  }
+}
+
+.review_header {
+  padding: 5px;
+}
+.review {
+  padding: 5px 10px;
 }
 
 .reviews_column1 {
@@ -771,7 +799,6 @@ div.mpw {
   text-align: center;
   padding-top: 3vh;
   padding-bottom: 4vh;
-  font-size: 3.5vw;
 }
 
 .review_header {
@@ -782,26 +809,43 @@ div.mpw {
 }
 
 #ureview {
-  font-size: 1.12vw;
+  font-size: 14px;
   overflow: hidden;
 }
 
 .user_review {
   text-align: center;
-  padding-top: 8vh;
-  font-size: 2vw;
+  padding: 8vh 10px 4vh 10px;
+  font-size: 18px;
 }
 
 /*--------- ABOUT SECTION ---------*/
 .about_section {
+  background-color: var(--beige2);
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
+
+.about_section h1 {
+  margin-bottom: 10px;
+}
+
 .about_section td,
 tr {
   text-align: center;
   align-items: center;
 }
+
+.about_table {
+  background-color: var(--beige1);
+  margin: 30px auto;
+  border: 1px solid black;
+}
+
+.about_desc td {
+  padding: 0px 50px 10px 50px;
+}
+
 .about_section img {
   border: 2px solid black;
 }
@@ -814,9 +858,36 @@ tr {
   margin-left: auto;
   margin-right: auto;
 }
+
+.contact_table {
+  width: 700px;
+}
+
+@media screen and (max-width: 700px) {
+  .contact_section p {
+    font-size: 14px;
+  }
+
+  .contact_table {
+    width: 400px;
+  }
+}
+
 .contact_section input {
   border-color: var(--darkergreen);
   background-color: #faf0d9;
+}
+
+.submit_btn {
+  background-color: var(--beige3);
+  height: 45px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.submit_btn:hover {
+  background-color: var(--beige4);
+  cursor: pointer;
 }
 /*--------- FOOTER SECTION ---------*/
 
