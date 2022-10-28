@@ -310,7 +310,7 @@ body {
 .pricing_container td {
   font-size: 25px;
   border: 1px solid black;
-  padding: 5px;
+  padding: 7px;
 }
 
 .pricing_container tr {
@@ -524,7 +524,7 @@ body {
 div.slidercontainer {
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  width: 60%;
 }
 
 .selectorslider {
@@ -567,9 +567,8 @@ div.slidercontainer {
   display: grid;
   grid-template-columns: 14;
   grid-template-rows: 1;
-  justify-content: left;
-  justify-items: left;
-  column-gap: 2.6rem;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
   margin-bottom: 3rem;
 }
 
@@ -581,10 +580,9 @@ div.slidercontainer {
   display: grid;
   grid-template-columns: 5;
   grid-template-rows: 1;
-  justify-content: right;
-  justify-items: right;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
   margin-bottom: 1rem;
-  column-gap: 12.1rem;
 }
 
 .foodLabel{
