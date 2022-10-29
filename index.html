@@ -1,566 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>YouTrient</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTrient</title>
+    <link rel="icon" href="images/Youtrient_Logo_r1.png"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="animation/aos.css"/> <!--https://github.com/michalsnik/aos/tree/v2-->
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <!--SACHA-->
+    <nav class="navbar">
+      <div class="nav_container">
+        <div class="nav_leftside">
+          <a href="#top" class="logo"
+            ><img
+              src="images/Youtrient_Logo_r1.png"
+              class="logo_img"
+              alt="logo"
+              height="80"
+              width="100"
+          /></a>
+        </div>
+        <div class="nav_rightside">
+          <ul class="nav_menu">
+            <li class="nav_item">
+              <a href="#how" class="nav_links">How it Works</a>
+            </li>
+            <li class="nav_item">
+              <a href="#select" class="nav_links">Build your plan</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_links">Contact Us</a>
+            </li>
+            <li class="nav_item">
+              <button class="sign_up">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--MAIN-->
+    <!--SACHA-->
+    <div class="main_section">
+      <div class="main_container">
+        <div class="main_content">
+          <h1 data-aos="zoom-in" data-aos-duration="1000"><em>Your</em> Food, <em>Your</em> Way</h1>
+          <h3 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">Customize meal plans based on your eating goals and habits</h3>
+          <a href="#how" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"><button class="main_button">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--HOW-->
+    <!--SACHA-->
+    <div class="how_section" id="how">
+      <div class="how_header">
+        <h1 data-aos="zoom-in" data-aos-offset="50">How does it work?</h1>
+        <h4 data-aos="zoom-in">From our farms directly to your plate</h4>
+      </div>
+      <div class="how_container">
+        <div class="card">
+          <img src="images/Structure.jpg" alt="box1" />
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 1</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Select a structure for your meal plan</p>
+        </div>
+        <div class="card">
+          <img src="images/Customize.jpg" alt="box2" />
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 2</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Customize it your way</p>
+        </div>
+        <div class="card">
+          <img src="images/Confirm.png" alt="box3" />
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 3</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Finalize and confirm your order</p>
+        </div>
+        <div class="card">
+          <img src="images/Enjoy.jpg" alt="box4" />
+          <h3 data-aos="fade-up" data-aos-offset="-100">Step 4</h3>
+          <p data-aos="fade-up" data-aos-offset="-100">Enjoy!</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--SELECT SECTION BEFORE DROPDOWN-->
+    <!--SACHA-->
+    <div class="select" id="select">
+      <div class="select_header" data-aos="fade-right" data-aos-duration="900" data-aos-offset="100">
+        <h1>Don't know where to start?</h1>
+        <h3>
+          Start building one of your custom plans around one of our popular
+          templates!
+        </h3>
+      </div>
+      <div class="select_container" data-aos="fade-right" data-aos-duration="900" data-aos-offset="100">
+        <a>
+          <div class="meal_templates gainer">
+            <h3>The Gainer</h3>
+            <p>High protein meal plan for users with large appetites</p>
+          </div>
+        </a>
+        <a>
+          <div class="meal_templates burner">
+            <h3>The Burner</h3>
+            <p>Low calorie meal plan for healthy weight loss</p>
+          </div>
+        </a>
+        <a>
+          <div class="meal_templates green_god">
+            <h3>The Green God</h3>
+            <p>Loaded with vitamins and minerals from extra greens</p>
+          </div>
+        </a>
+      </div>
+      <div class="select_footer" data-aos="fade-up" data-aos-offset="-100" data-aos-duration="900">
+        <p>or</p>
+        <a href="#enable_dropdown"><button class="main_button" onclick="toggleDisplay('enable_dropdown')">Start from Scratch</button></a>
+      </div>
+    </div>
+    <hr />
 
-		<link rel="stylesheet" type="text/css" href="styles.css" />
-	</head>
-	<body>
-		<!--NAVBAR-->
-		<!--SACHA-->
-		<nav class="navbar">
-		      <div class="nav_container">
-			<div class="nav_leftside">
-			  <a href="#top" class="logo"><img src="images/Youtrient_Logo_r1.png" class="logo_img" alt="logo" height="80" width="100"></a>
-			</div>
-			<div class="nav_rightside">
-			  <ul class="nav_menu">
-			    <li class="nav_item">
-			      <a href="#how" class="nav_links">How it Works</a>
-			    </li>
-			    <li class="nav_item">
-			      <a href="#select" class="nav_links">Build your plan</a>
-			    </li>
-			    <li class="nav_item">
-			      <a href="#contact" class="nav_links">Contact Us</a>
-			    </li>
-			    <li class="nav_item">
-			      <button class="sign_up">Sign Up</button>
-			    </li>
-			  </ul>
-			</div>
-		      </div>
-		</nav>
-		<!--MAIN-->
-		<!--SACHA-->
-		<div class="main_section">
-			<div class="main_container">
-				<div class="main_content">
-					<h1><em>Your</em> Food, <em>Your</em> Way</h1>
-					<h3>Customize meal plans based on your eating goals and habits</h3>
-					<a href="#how"><button class="main_button">Get Started</button></a>
-				</div>
-			</div>
-		</div>
-		<hr />
-		<!--HOW-->
-		<!--SACHA-->
-		<div class="how_section" id="how">
-			<div class="how_header">
-				<h1>How does it work?</h1>
-				<h4>From our farms directly to your plate</h4>
-			</div>
-			<div class="how_container">
-				<div class="card">
-					<img src="images/Structure.jpg" alt="box1" />
-					<h3>Step 1</h3>
-					<p>Select a structure for your meal plan</p>
-				</div>
-				<div class="card">
-					<img src="images/Customize.jpg" alt="box2" />
-					<h3>Step 2</h3>
-					<p>Customize it your way</p>
-				</div>
-				<div class="card">
-					<img src="images/Confirm.png" alt="box3" />
-					<h3>Step 3</h3>
-					<p>Finalize and confirm your order</p>
-				</div>
-				<div class="card">
-					<img src="images/Enjoy.jpg" alt="box4" />
-					<h3>Step 4</h3>
-					<p>Enjoy!</p>
-				</div>
-			</div>
-		</div>
-		<hr />
-		<!--PRICING-->
-		<!--ANDREW-->
-		<div class="pricing_section" id="price">
-			<br /><br />
-			<h1>Product Pricing (Per Serving)</h1>
-			<br />
-			<div class="pricing_container">
-				<br />
-				<table>
-					<tr>
-						<td>Protein</td>
-						<td>Price</td>
-					</tr>
-					<tr>
-						<td>Beef</td>
-						<td>$2.00</td>
-					</tr>
-					<tr>
-						<td>Ground Beef</td>
-						<td>$1.50</td>
-					</tr>
-					<tr>
-						<td>Chicken</td>
-						<td>$1.25</td>
-					</tr>
-					<tr>
-						<td>Tofu</td>
-						<td>$1.50</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>Bases</td>
-						<td>Price</td>
-					</tr>
-					<tr>
-						<td>Pasta</td>
-						<td>$1.50</td>
-					</tr>
-					<tr>
-						<td>Rice</td>
-						<td>$1.00</td>
-					</tr>
-					<tr>
-						<td>Potatoes</td>
-						<td>$1.40</td>
-					</tr>
-					<tr>
-						<td>Eggs</td>
-						<td>$1.50</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>Vegetables/Fruits</td>
-						<td>Price</td>
-					</tr>
-					<tr>
-						<td>Carrots</td>
-						<td>$1.25</td>
-					</tr>
-					<tr>
-						<td>Broccoli</td>
-						<td>$1.50</td>
-					</tr>
-					<tr>
-						<td>Tomatoes</td>
-						<td>$1.45</td>
-					</tr>
-					<tr>
-						<td>Lettuce</td>
-						<td>$1.00</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>Spices</td>
-						<td>Price</td>
-					</tr>
-					<tr>
-						<td>Basil</td>
-						<td>$0.90</td>
-					</tr>
-					<tr>
-						<td>Garlic</td>
-						<td>$1.00</td>
-					</tr>
-					<tr>
-						<td>Paprika</td>
-						<td>$1.10</td>
-					</tr>
-					<tr>
-						<td>Cajun</td>
-						<td>$1.20</td>
-					</tr>
-				</table>
-			</div>
-			<br/>
-			<p>
-				See anything you like? You can add any and as much of these items as you
-				want! Choose what you think would fit best in your package and add your
-				desired portion sizes (in servings) for the listed prices.
-			</p>
-		</div>
-		<hr />
-		<!--SELECT SECTION BEFORE DROPDOWN-->
-		<!--SACHA-->
-		<div class="select" id="select">
-			<div class="select_header">
-				<h1>Don't know where to start</h1>
-				<h3>Start building one of your custom plans around one of our popular templates!</h3>
-			</div>
-			<div class="select_container">
-				<a>
-					<div class="meal_templates gainer">
-						<h3>The Gainer</h3>
-						<p>High Protein meal plan for users with large appetites</p>
-					</div>
-				</a>
-				<a>
-					<div class="meal_templates burner">
-						<h3>The Burner</h3>
-						<p>Low Calorie meal plan for healthy weight-loss</p>
-					</div>
-				</a>
-				<a>
-					<div class="meal_templates green_god">
-						<h3>The Green God</h3>
-						<p>Loaded with vitamins and minerals from extra greens</p>
-					</div>
-				</a>
-			</div>
-			<div class="select_footer">
-				<p>or</p>
-				<button class="main_button">Start from Scratch</button>
-			</div>
-		</div>
-		<hr />
-		<!--PLAN + DROPDOWN-->
-		<!--SEBASTIAN-->
-		<div class="plan_section" id="plan">
-			<p class="mplanhead">
-			  Make <em class="mplanhead">your</em> meal plan today!
-			</p>
-	  
-			<h3 class="mph3">Choose your goals and Dietary restrictions</h3>
-			<div class="goals">
-			  <label for="goals" class="mplabel">I want to:</label>
-			  <select name="goals" class="dropdown">
-				<option value="build muscle">Gain weight</option>
-				<option value="lose weight">Lose weight</option>
-				<option value="no goals">Maintain weight</option>
-			  </select>
+    <!--Big DropDown Section-->
+    <div class="make_plan_dropdown" id="enable_dropdown" style="display: none;">
+    <!--PLAN + DROPDOWN-->
+    <!--SEBASTIAN-->
 
-			  <label for="formula" class="mplabel">Formula</label>
-			  <select name="formula" class="dropdown">
-				<option value="normal">Normal</option>
-				<option value="lean">Lean mass</option>
-			  </select>
+    
+    
+    
+    <div class="plan_section" id="plan">
+      <p class="mplanhead">
+        Make <em class="mplanhead">your</em> meal plan today!
+      </p>
 
-			  <label for="diet" class="mplabel">Diet or restrictions:</label>
-			  <select name="diet" class="dropdown">
-				<option value="vegan">Vegan</option>
-				<option value="vegetarian">Vegetarian</option>
-				<option value="keto">Keto</option>
-				<option value="lactose intolerant">Lactose intolerant</option>
-				<option value="gluten free">Gluten free</option>
-				<option value="no restrictions">No restrictions</option>
-			  </select>
-			</div>
+      <div class="mpBigContainer">
+        <div class="columnOne">
+          <span class="mpContainer">
+            <div class="boxHead"><h3 class="mph3">Choose your goals and Dietary restrictions</h3></div>
+            <div class="boxOne"><label for="goals" class="mplabel">I want to:</label></div>
+            <div class="boxTwo">
+              <select name="goals" class="dropdown">
+                <option value="build muscle">Gain weight</option>
+                <option value="lose weight">Lose weight</option>
+                <option value="no goals">Maintain weight</option>
+              </select>
+            </div>
+            <div class="boxOne"><label for="formula" class="mplabel">Formula:</label></div>
+            <div class="boxTwo">
+              <select name="formula" class="dropdown">
+                <option value="normal">Normal</option>
+                <option value="lean">Lean mass</option>
+              </select>
+            </div>
+            <div class="boxOne"><label for="diet" class="mplabel">Diet or restrictions:</label></div>
+            <div class="boxTwo">
+              <select name="diet" class="dropdown">
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="keto">Keto</option>
+                <option value="lactose intolerant">Lactose intolerant</option>
+                <option value="gluten free">Gluten free</option>
+                <option value="no restrictions">No restrictions</option>
+              </select>
+            </div>
+          </span>
+        </div>
+        <div class="columnTwo">
+          <span class="mpContainerTwo">
+            <div class="boxHead"><h3 class="mph3">More info</h3></div>
+            <div class="mpBox"><th><label for="gender" class="mplabel">Sex at Birth</label></th></div>
+            <div class="mpboxThree">
+              <select name="gender" class="dropdown">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="mpBox"><th><label for="age" class="mplabel">Age:</label></th></div>
+            <div class="mpboxThree">
+              <input
+                    type="text"
+                    id="age"
+                    class="mpinput"
+                    age="Age"
+                    placeholder="your age"
+                  />
+            </div>
+            <div class="mpBox"><th><label for="wunit" class="mplabel">Unit</label></th></div>
+            <div class="mpboxThree">
+              <select name="wunit" class="dropdown">
+                <option value="kg">Kilos</option>
+                <option value="lbs">Pounds</option>
+              </select>
+            </div>
+            <div class="mpBox"><th><label for="weight" class="mplabel">Weight:</label></th></div>
+            <div class="mpboxThree">
+              <input
+                    type="text"
+                    id="weight"
+                    class="mpinput"
+                    weight="Weight"
+                    placeholder="your weight"
+                  />
+            </div>
+            <div class="mpBox"><th><label for="hunit" class="mplabel">Unit</label></th></div>
+            <div class="mpboxThree">
+              <select name="hunit" class="dropdown">
+                <option value="ft">Feet</option>
+                <option value="cm">cm</option>
+              </select>
+            </div>
+            <div class="mpBox"><th><label for="height" class="mplabel">Height:</label></th></div>
+            <div class="mpboxThree">
+              <input
+                    type="text"
+                    id="height"
+                    class="mpinput"
+                    height="Height"
+                    placeholder="your height"
+                  />
+            </div>
+            <div class="mpBox"><label for="activity" class="mplabel">Activity level</label></div>
+            <div class="mpboxThree">
+              <select name="activity" class="dropdown">
+                <option value="sedentary">Sedentary</option>
+                <option value="light">Light activity</option>
+                <option value="moderate">Moderate activity</option>
+                <option value="active">Very active</option>
+              </select>
+            </div>
+          </span>
+        </div>
+      </div>
+      </div>
 
-			<h3 class="mph3">More info</h3>
+      <div class="mpw">
+        <h3 class="mph3">Meals per week</h3>
+        <input
+          type="range"
+          min="1"
+          max="14"
+          value="7"
+          class="selectorslider"
+          id="myRange"
+        />
+        <div class="sliderLableMPW">
+          <div class="mpwLabel">1</div>
+          <div class="mpwLabel">2</div>
+          <div class="mpwLabel">3</div>
+          <div class="mpwLabel">4</div>
+          <div class="mpwLabel">5</div>
+          <div class="mpwLabel">6</div>
+          <div class="mpwLabel">7</div>
+          <div class="mpwLabel">8</div>
+          <div class="mpwLabel">9</div>
+          <div class="mpwLabel">10</div>
+          <div class="mpwLabel">11</div>
+          <div class="mpwLabel">12</div>
+          <div class="mpwLabel">13</div>
+          <div class="mpwLabel">14</div>
+        </div>
+      </div>
+    <hr />
 
-			<div class="info">
-			  <table>
-				<tr>
-				  <th><label for="gender" class="mplabel">Sex at Birth</label></th>
-				  <th><label for="age" class="mplabel">Age:</label></th>
-				  <th><label for="wunit" class="mplabel">Unit</label></th>
-				  <th><label for="weight" class="mplabel">Weight:</label></th>
-				  <th><label for="hunit" class="mplabel">Unit</label></th>
-				  <th><label for="height" class="mplabel">Height:</label></th>
-				  <th>
-					<label for="activity" class="mplabel">Activity level</label>
-				  </th>
-				</tr>
-				<tr>
-				  <td>
-					<select name="gender" class="dropdown">
-					  <option value="male">Male</option>
-					  <option value="female">Female</option>
-					</select>
-				  </td>
-				  <td>
-					<input
-					  type="text"
-					  id="age"
-					  class="mpinput"
-					  age="Age"
-					  placeholder="your age"
-					/>
-				  </td>
-				  <td>
-					<select name="wunit" class="dropdown">
-					  <option value="kg">Kilos</option>
-					  <option value="lbs">Pounds</option>
-					</select>
-				  </td>
-				  <td>
-					<input
-					  type="text"
-					  id="weight"
-					  class="mpinput"
-					  weight="Weight"
-					  placeholder="your weight"
-					/>
-				  </td>
-				  <td>
-					<select name="hunit" class="dropdown">
-					  <option value="ft">Feet</option>
-					  <option value="cm">cm</option>
-					</select>
-				  </td>
-				  <td>
-					<input
-					  type="text"
-					  id="height"
-					  class="mpinput"
-					  height="Height"
-					  placeholder="your height"
-					/>
-				  </td>
-				  <td>
-					<select name="activity" class="dropdown">
-					  <option value="sedentary">Sedentary</option>
-					  <option value="light">Light activity</option>
-					  <option value="moderate">Moderate activity</option>
-					  <option value="active">Very active</option>
-					</select>
-				  </td>
-				</tr>
-			  </table>
-			</div>
-			<div class="mpw">
-				<h3 class="mph3">Meals per week</h3>
-				<input type="range" min="1" max="14" value="7" class="selectorslider" id="myRange">
-				<table class="slidertable2">
-					<th class="slidertablehead">1</th>
-					<th class="slidertablehead">2</th>
-					<th class="slidertablehead">3</th>
-					<th class="slidertablehead">4</th>
-					<th class="slidertablehead">5</th>
-					<th class="slidertablehead">6</th>
-					<th class="slidertablehead">7</th>
-					<th class="slidertablehead">8</th>
-					<th class="slidertablehead">9</th>
-					<th class="slidertablehead">10</th>
-					<th class="slidertablehead">11</th>
-					<th class="slidertablehead">12</th>
-					<th class="slidertablehead">13</th>
-					<th class="slidertablehead">14</th>
-				</table>
-			</div>
-		  </div>
-		  <hr />
-		<!--SLIDERS-->
-		<!--SEBASTIAN-->
-		<div class="sliders">
-			<p class="hselect">Select protein</p>
-			<div class="slidercontainer">
-				<h3 class="shead">Chicken</h3>
-				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
-				<table class="slidertable">
-					<th class="slidertablehead">none</th>
-					<th class="slidertablehead">some</th>
-					<th class="slidertablehead">average</th>
-					<th class="slidertablehead">more</th>
-					<th class="slidertablehead">max</th>
-				</table>
-			<h3 class="shead">Beef</h3>
-				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
-				<table class="slidertable">
-					<th class="slidertablehead">none</th>
-					<th class="slidertablehead">some</th>
-					<th class="slidertablehead">average</th>
-					<th class="slidertablehead">more</th>
-					<th class="slidertablehead">max</th>
-				</table>
-			<h3 class="shead">Fish</h3>
-				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
-				<table class="slidertable">
-					<th class="slidertablehead">none</th>
-					<th class="slidertablehead">some</th>
-					<th class="slidertablehead">average</th>
-					<th class="slidertablehead">more</th>
-					<th class="slidertablehead">max</th>
-				</table>
-			<h3 class="shead">Tofu</h3>
-				<input type="range" min="1" max="5" value="3" class="selectorslider" id="myRange">
-				<table class="slidertable">
-					<th class="slidertablehead">none</th>
-					<th class="slidertablehead">some</th>
-					<th class="slidertablehead">average</th>
-					<th class="slidertablehead">more</th>
-					<th class="slidertablehead">max</th>
-				</table>
-		</div>
-		<div class="button">
-			<button type="button" class="mpbutton">Make my plan!</button>
-		</div>
-		<hr />
-		<!--REVIEWS-->
-		<!--XAVIER-->
-		<div class="reviews_section">
-			<div class="reviews_container">
-				<div class="reviews_content">
-					<h1>Reviews from our satisfied customers!</h1>
-					<div class="row">
-						<div class="column">
-							<h2>Mark's Review:</h2>
-							<img src="images/4.5_stars.png" alt="4.5 Stars" class="stars" />
-							<h3 class="review">
-								I’m obsessed with the customizable options for meals! As a
-								bodybuilder, I couldn’t be happier with their gainer meal plan.
-							</h3>
-						</div>
-						<div class="column">
-							<h2>Linda's Review:</h2>
-							<img src="images/5_stars.png" alt="5 Stars" class="stars" />
-							<h3 class="review">
-								This is the only solution I found for my complex dietary
-								restrictions! YouTrient saves me so much time, money and energy!
-								I love it!
-							</h3>
-						</div>
-					</div>
-				</div>
-				<form>
-					<label for="ureview">Leave us a review!</label>
-					<input
-						type="text"
-						id="ureview"
-						name="ureview"
-						placeholder="Write your review here!"
-						autocomplete="off"
-					/>
-					<input type="submit" value="Submit" />
-				</form>
-			</div>
-		</div>
-		<hr />
-		<!--ABOUT-->
-		<!--CALLAN-->
-		<div class="about_section" id="about">
-			<h1 style="text-align: center">About Us</h1>
-			<p style="text-align: center">
-				YouTrient is a student-founded startup organized by a group of 6
-				Software Engineering & Computer Science students.
-			</p>
-			<table class="invis">
-				<tr>
-					<!-- Names -->
-					<th>Sacha</th>
-					<th>Callan</th>
-					<th>Xavier</th>
-				</tr>
-				<tr>
-					<!-- Pictures -->
-					<td>
-						<img src="images/sacha_about.png" alt="Portrait" width="60%"/>
-					</td>
-					<td>
-						<img src="images/callan_about.png" alt="Portrait" width="60%"/>
-					</td>
-					<td>
-						<img src="images/xavier_about.png" alt="Portrait" width="60%"/>
-					</td>
-				</tr>
-				<tr>
-					<!-- Descriptions -->
-					<td>Desc.</td>
-					<td>Desc.</td>
-					<td>Desc.</td>
-				</tr>
-				<tr>
-					<!-- Names -->
-					<th>Andrew</th>
-					<th>Sebastian</th>
-					<th>Tarek</th>
-				</tr>
-				<tr>
-					<!-- Pictures -->
-					<td>
-						<img src="images/andrew_about.png" alt="Portrait" width="60%"/>
-					</td>
-					<td>
-						<img src="images/sebastian_about.png" alt="Portrait" width="60%"/>
-					</td>
-					<td>
-						<img src="images/tarek_about.png" alt="Portrait" width="60%"/>
-					</td>
-				</tr>
-				<tr> <td> </td> </tr>
-				<tr>
-					<!-- Descriptions -->
-					<td>Desc.</td>
-					<td>Desc.</td>
-					<td>Desc.</td>
-				</tr>
-			</table>
-		</div>
-		<!--CONTACT-->
-		<hr />
-		<!--CALLAN-->
-		<div class="contact_section" id="contact">
-			<h2 style="text-align: center">Contact Us</h2>
-			<p style="text-align: center">
-				Here are some ways to contact us if you have any questions.
-			</p>
-			<table>
-				<tr>
-					<td> <input style="width:45%" type="text" name="Name" placeholder="Name..."> <input style="width:45%" type="text" name="email" placeholder=Email...> </td>
-				</tr>
-				<tr>
-					<td> <input style="height:100px; width:92%" type="textarea" name="info" placeholder="Share some thoughts!">
-				</tr>
-				<tr>
-					<td> <input style="padding:10px; text-align: center; background-color: var(--beige3);"type="button" name="submit" value="Submit">
-				</tr>
-			</table>
-		</div>
-		<hr>
 
-		<!--FOOTER-->
-		<!--TAREK-->
-		<div class="footer">
-			<div class="footer_section">
-				<div class="footer_column">
-					<table>
-						<tr><th colspan="2">Jump to</th></tr>
-						<tr>
-							<td><button><a href="#navbar">Navigation</a></button></td>
-							<td><button><a href="#how">How it works</a></button></td>
-						</tr>
-						<tr>
-							<td><button><a href="#plan">Meal planner</a></button></td>
-							<td><button><a href="#reviews">Reviews</a></button></td>
-						</tr>
-						<tr>
-							<td><button><a href="#about">About</a></button></td>
-							<td><button><a href="#contact">Contact us</a></button></td>
-						</tr>
-					</table>
-					<table class="extra">
-						<tr><th colspan="2">YouTrient</th></tr>
-						<tr>
-							<td><button>Gift Cards</button></td>
-							<td><button>Email Signup</button></td>
-						</tr>
-						<tr>
-							<td><button>Careers</button></td>
-							<td><button>FAQ</button></td></tr>
-						</tr>
-						<tr>
-							<td><button>Privacy Policy</button></td>
-							<td><button>Terms of Use</button></td>
-						</tr>
-					</table>
-					<div class="footer_row">
-						<div>
-							<img class="social_media" src="images/facebook.png">
-							<img class="social_media" src="images/instagram.png">
-							<img class="social_media" src="images/twitter.png">
-							<img class="social_media" src="images/youtube.png">
-						</div>
-						<div class="mobile">
-							<a href="https://www.apple.com/ca/app-store/%22%3E"><img src= "images/apple.png" alt="app store icon" width="175"></a>
-							<a href="https://play.google.com/store/games%22%3E"><img src="images/googleplay.png" width="175"></a>
-							<h4 id="yearToDate"></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="main.js"></script>
-	</body>
+    <div class="pricing_section" id="price">
+      <br /><br />
+      <h1>Product Pricing (Per Serving)</h1>
+      <br />
+      <div class="pricing_container">
+        <br />
+        <table>
+          <tr>
+            <td>Protein</td>
+            <td>Price</td>
+          </tr>
+          <tr>
+            <td>Chicken</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td>Beef</td>
+            <td>$2.00</td>
+          </tr>
+          <tr>
+            <td>Fish</td>
+            <td>$2.25</td>
+          </tr>
+          <tr>
+            <td>Tofu</td>
+            <td>$1.50</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Bases</td>
+            <td>Price</td>
+          </tr>
+          <tr>
+            <td>Pasta</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td>Rice</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Potatoes</td>
+            <td>$1.40</td>
+          </tr>
+          <tr>
+            <td>Eggs</td>
+            <td>$1.50</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Vegetables/Fruits</td>
+            <td>Price</td>
+          </tr>
+          <tr>
+            <td>Carrots</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td>Broccoli</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td>Tomatoes</td>
+            <td>$1.45</td>
+          </tr>
+          <tr>
+            <td>Lettuce</td>
+            <td>$1.00</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Spices</td>
+            <td>Price</td>
+          </tr>
+          <tr>
+            <td>Basil</td>
+            <td>$0.90</td>
+          </tr>
+          <tr>
+            <td>Garlic</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Paprika</td>
+            <td>$1.10</td>
+          </tr>
+          <tr>
+            <td>Cajun</td>
+            <td>$1.20</td>
+          </tr>
+        </table>
+      </div>
+      <br />
+      <p>
+        See anything you like? You can add any and as much of these items as you
+        want! Choose what you think would fit best in your package and add your
+        desired portion sizes (in servings) for the listed prices.
+      </p>
+    </div>
+    <hr/>
+
+    <!--SLIDERS-->
+    <!--SEBASTIAN-->
+    <div class="sliders">
+      <p class="hselect">Select your meat, veggies and desired macros</p>
+      <div class="slidercontainer">
+        <div class="sliderFlexContainer">
+          <div class="sliderFlexBoxOne">
+            <h3 class="shead">Chicken</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+          
+            <h3 class="shead">Beef</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+
+            <h3 class="shead">Fish</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+
+            <h3 class="shead">Tofu</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+          </div>
+          <div class="sliderFlexBoxTwo">
+            <h3 class="shead">Veggies</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+            <h3 class="shead">Carbs</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+
+            <h3 class="shead">Protein</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+
+            <h3 class="shead">Fat</h3>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="selectorslider"
+              id="myRange"
+            />
+            <div class="sliderLabelFood">
+              <div class="foodLabel">none</div>
+              <div class="foodLabel">some</div>
+              <div class="foodLabel">average</div>
+              <div class="foodLabel">more</div>
+              <div class="foodLabel">max</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button type="button" class="mpbutton">Make my plan!</button>
+    </div>
+    <hr />
+  </div>
+    <!--REVIEWS-->
+    <!--XAVIER-->
+    <div class="reviews_section" id="reviews">
+      <div class="reviews_container">
+        <div class="reviews_content">
+          <h1>Reviews from our satisfied customers!</h1>
+          <div class="row">
+            <div class="reviews_column1 fade-in">
+              <div class="review_header">
+                <h2>Mark's Review:</h2>
+              </div>
+              <h3 class="review">
+                I’m obsessed with the customizable options for meals! As a
+                bodybuilder, I couldn’t be happier with their gainer meal plan.
+              </h3>
+              <img src="images/4.5_stars.png" alt="4.5 Stars" class="stars" />
+            </div>
+            <div class="reviews_column2 fade-in">
+              <div class="review_header">
+                <h2>Linda's Review:</h2>
+              </div>
+              <h3 class="review">
+                This is the only solution I found for my complex dietary
+                restrictions! YouTrient saves me so much time, money and energy!
+                I love it!
+              </h3>
+              <img src="images/5_stars.png" alt="5 Stars" class="stars" />
+            </div>
+          </div>
+        </div>
+        <div class="user_review">
+          <form>
+            <label for="ureview"
+              >Want to let us know what you think about YouTrient?</label
+            ><br /><br />
+            <input
+              type="text"
+              id="ureview"
+              name="ureview"
+              placeholder="Write your review here!"
+              autocomplete="off"
+              size="50"
+            />
+            <input type="button" id="review_submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <!--CALLAN-->
+    <div class="about_section" id="about">
+      <h1 style="text-align: center" data-aos="fade-right" data-aos-duration="900" data-aos-offset="50">About Us</h1>
+      <p style="text-align: center"  data-aos="fade-right" data-aos-duration="900" data-aos-offset="50">
+        YouTrient is a student-founded startup organized by a group of 6
+        Software Engineering & Computer Science students.
+      </p>
+      <table class="about_table" data-aos="fade-right" data-aos-duration="900" data-aos-offset="300">
+        <tr class="about_names">
+          <!-- Names -->
+          <th>Sacha</th>
+          <th>Callan</th>
+          <th>Xavier</th>
+        </tr>
+        <tr class="about_images">
+          <!-- Pictures -->
+          <td>
+            <img class="about_img" src="images/sacha_about.png" alt="Portrait" width="200px" />
+          </td>
+          <td>
+            <img class="about_img" src="images/callan_about.png" alt="Portrait" width="200px" />
+          </td>
+          <td>
+            <img class="about_img" src="images/xavier_about.png" alt="Portrait" width="200px" />
+          </td>
+        </tr>
+        <tr class="about_desc">
+          <!-- Descriptions -->
+          <td>Imagine not eating healthy</td>
+          <td>Desc.</td>
+          <td>"Eat your greens!"-My mom</td>
+        </tr>
+        <tr class="about_names">
+          <!-- Names -->
+          <th>Andrew</th>
+          <th>Sebastian</th>
+          <th>Tarek</th>
+        </tr>
+        <tr class="about_images">
+          <!-- Pictures -->
+          <td>
+            <img class="about_img" src="images/andrew_about.png" alt="Portrait" width="200px" />
+          </td>
+          <td>
+            <img class="about_img" src="images/sebastian_about.JPG" alt="Portrait" width="200px" />
+          </td>
+          <td>
+            <img class="about_img" src="images/tarek_about.png" alt="Portrait" width="200px" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr class="about_desc">
+          <!-- Descriptions -->
+          <td>Desc.</td>
+          <td>Add some protein.</td>
+          <td>Eating healthy is cool I guess. #celery</td>
+        </tr>
+      </table>
+    </div>
+    <!--CONTACT-->
+    <!--CALLAN-->
+    <div class="contact_section" id="contact">
+      <h2 style="text-align: center">Contact Us</h2>
+      <p style="text-align: center; margin-bottom: 10px;">
+        Here are some ways to contact us if you have any questions.
+      </p>
+      <table class="contact_table">
+        <tr class="top_row">
+          <td>
+            <input
+              style="width: 45%; height: 20px;"
+              type="text"
+              name="Name"
+              placeholder="Name..."
+              data-aos="fade-right" 
+              data-aos-duration="600" 
+              data-aos-offset="200"
+            />
+            <input
+              style="width: 45%; height: 20px;"
+              type="text"
+              name="email"
+              placeholder="Email..."
+              data-aos="fade-left" 
+              data-aos-duration="600" 
+              data-aos-offset="200"
+            />
+          </td>
+        </tr>
+        <tr class="btm_row">
+          <td>
+            <input
+              style="height: 150px; width: 92%"
+              type="textarea"
+              name="info"
+              placeholder="Share some thoughts!"
+              data-aos="fade-up" 
+              data-aos-duration="600" 
+              data-aos-offset="200"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <button class="submit_btn" data-aos="fade-up" 
+            data-aos-duration="600" 
+            data-aos-offset="150">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!--FOOTER-->
+    <!--TAREK-->
+    <div class="footer">
+      <div class="footer_section">
+        <div class="footer_column">
+          <table>
+            <tr>
+              <th colspan="2">Jump to</th>
+            </tr>
+            <tr>
+              <td>
+                <button><a href="#top">Navigation</a></button>
+              </td>
+              <td>
+                <button><a href="#how">How it works</a></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button><a href="#plan">Meal planner</a></button>
+              </td>
+              <td>
+                <button><a href="#reviews">Reviews</a></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button><a href="#about">About</a></button>
+              </td>
+              <td>
+                <button><a href="#contact">Contact us</a></button>
+              </td>
+            </tr>
+          </table>
+          <table class="extra">
+            <tr>
+              <th colspan="2">YouTrient</th>
+            </tr>
+            <tr>
+              <td><button>Gift Cards</button></td>
+              <td><button>Email Signup</button></td>
+            </tr>
+            <tr>
+              <td><button>Careers</button></td>
+              <td><button>FAQ</button></td>
+            </tr>
+            <tr>
+              <td><button>Privacy Policy</button></td>
+              <td><button>Terms of Use</button></td>
+            </tr>
+          </table>
+          <div class="footer_row">
+            <div>
+              <img class="social_media" src="images/facebook.png" />
+              <img class="social_media" src="images/instagram.png" />
+              <img class="social_media" src="images/twitter.png" />
+              <img class="social_media" src="images/youtube.png" />
+            </div>
+            <div class="mobile">
+              <a href="https://www.apple.com/ca/app-store"
+                ><img src="images/apple.png" alt="app store icon" width="175"
+              /></a>
+              <a href="https://play.google.com/store/games"
+                ><img src="images/googleplay.png" width="175"
+              /></a>
+              <h4 id="yearToDate"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="animation/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        duration: 1000,
+        offset: 150
+      }
+      );
+    </script>
+  </body>
 </html>
