@@ -40,3 +40,13 @@ function toggleDisplay(id) {
     scroll
   }
 }
+
+// Change pricing table contents on click
+
+var last_value = 'protein'
+
+function change_table(value) {
+    document.getElementById(last_value).style.display='none';
+    document.getElementById(value).style.display='block';
+    last_value = value;
+}

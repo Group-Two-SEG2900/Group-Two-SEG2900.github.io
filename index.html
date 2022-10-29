@@ -85,6 +85,121 @@
       </div>
     </div>
     <hr />
+
+    <!--PRICING-->
+		<!--ANDREW-->
+		<div class="pricing_section" id="price">
+			<br /><br />
+			<h1>Product Pricing (Per Serving)</h1>
+			<br />
+			<div class="pricing_container">
+				<div class="price_dropdown">
+					<button class="dropdown_button">Food Categories</button>
+					<div class="dropdown_content">
+						<a onclick="change_table('protein');">Protein</a>
+						<a onclick="change_table('base');">Bases</a>
+						<a onclick="change_table('veggie');">Fruits/Veggies</a>
+						<a onclick="change_table('spice');">Spices</a>
+					</div>
+				</div>
+				<br /><br />
+				<table id="protein">
+					<tr>
+						<td>Protein</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Beef</td>
+						<td>$2.00</td>
+					</tr>
+					<tr>
+						<td>Ground Beef</td>
+						<td>$1.50</td>
+					</tr>
+					<tr>
+						<td>Chicken</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td>Tofu</td>
+						<td>$1.50</td>
+					</tr>
+				</table>
+				<table id="base" style="display:none;">
+					<tr>
+						<td>Bases</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Pasta</td>
+						<td>$1.50</td>
+					</tr>
+					<tr>
+						<td>Rice</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Potatoes</td>
+						<td>$1.40</td>
+					</tr>
+					<tr>
+						<td>Eggs</td>
+						<td>$1.50</td>
+					</tr>
+				</table>
+				<table id="veggie" style="display:none;">
+					<tr>
+						<td>Vegetables/Fruits</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Carrots</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td>Broccoli</td>
+						<td>$1.50</td>
+					</tr>
+					<tr>
+						<td>Tomatoes</td>
+						<td>$1.45</td>
+					</tr>
+					<tr>
+						<td>Lettuce</td>
+						<td>$1.00</td>
+					</tr>
+				</table>
+				<table id="spice" style="display:none;">
+					<tr>
+						<td>Spices</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Basil</td>
+						<td>$0.90</td>
+					</tr>
+					<tr>
+						<td>Garlic</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Paprika</td>
+						<td>$1.10</td>
+					</tr>
+					<tr>
+						<td>Cajun</td>
+						<td>$1.20</td>
+					</tr>
+				</table>
+			</div>
+			<br/>
+			<p>
+				See anything you like? You can add any and as much of these items as you
+				want! Choose what you think would fit best in your package and add your
+				desired portion sizes (in servings) for the listed prices.
+			</p>
+		</div>
+		<hr />
     <!--SELECT SECTION BEFORE DROPDOWN-->
     <!--SACHA-->
     <div class="select" id="select">
@@ -263,111 +378,6 @@
         </div>
       </div>
     <hr />
-
-
-    <div class="pricing_section" id="price">
-      <br /><br />
-      <h1>Product Pricing (Per Serving)</h1>
-      <br />
-      <div class="pricing_container">
-        <br />
-        <table>
-          <tr>
-            <td>Protein</td>
-            <td>Price</td>
-          </tr>
-          <tr>
-            <td>Chicken</td>
-            <td>$1.25</td>
-          </tr>
-          <tr>
-            <td>Beef</td>
-            <td>$2.00</td>
-          </tr>
-          <tr>
-            <td>Fish</td>
-            <td>$2.25</td>
-          </tr>
-          <tr>
-            <td>Tofu</td>
-            <td>$1.50</td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Bases</td>
-            <td>Price</td>
-          </tr>
-          <tr>
-            <td>Pasta</td>
-            <td>$1.50</td>
-          </tr>
-          <tr>
-            <td>Rice</td>
-            <td>$1.00</td>
-          </tr>
-          <tr>
-            <td>Potatoes</td>
-            <td>$1.40</td>
-          </tr>
-          <tr>
-            <td>Eggs</td>
-            <td>$1.50</td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Vegetables/Fruits</td>
-            <td>Price</td>
-          </tr>
-          <tr>
-            <td>Carrots</td>
-            <td>$1.25</td>
-          </tr>
-          <tr>
-            <td>Broccoli</td>
-            <td>$1.50</td>
-          </tr>
-          <tr>
-            <td>Tomatoes</td>
-            <td>$1.45</td>
-          </tr>
-          <tr>
-            <td>Lettuce</td>
-            <td>$1.00</td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Spices</td>
-            <td>Price</td>
-          </tr>
-          <tr>
-            <td>Basil</td>
-            <td>$0.90</td>
-          </tr>
-          <tr>
-            <td>Garlic</td>
-            <td>$1.00</td>
-          </tr>
-          <tr>
-            <td>Paprika</td>
-            <td>$1.10</td>
-          </tr>
-          <tr>
-            <td>Cajun</td>
-            <td>$1.20</td>
-          </tr>
-        </table>
-      </div>
-      <br />
-      <p>
-        See anything you like? You can add any and as much of these items as you
-        want! Choose what you think would fit best in your package and add your
-        desired portion sizes (in servings) for the listed prices.
-      </p>
-    </div>
-    <hr/>
 
     <!--SLIDERS-->
     <!--SEBASTIAN-->
