@@ -295,14 +295,12 @@ body {
 
 .pricing_container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .pricing_container table {
   border: 1px solid black;
-  margin: 1%;
+  margin: 0% 1%;
   border-collapse: collapse;
   background-color: var(--beige2);
 }
@@ -322,6 +320,40 @@ body {
   transition-duration: 0.3s;
 }
 
+.price_dropdown {
+  position: relative;
+  display:inline-block;
+  margin:0% 1%
+}
+
+.dropdown_button {
+  background-color: var(--darkgreen);
+  color:white;
+  padding:15px;
+  font-size: 15px;
+  border:none;
+}
+
+.dropdown_content {
+  display: none;
+  position:absolute;
+  background-color: var(--beige1);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  color:black;
+  padding: 12px 19px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content a:hover {background-color: var(--hoverbeige);}
+
+.price_dropdown:hover .dropdown_content {display:block;}
+
+.price_dropdown:hover .dropdown_button {background-color: var(--darkergreen);}
 
 /*--------- SELECT SECTION ---------*/
 .select {
