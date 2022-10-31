@@ -889,6 +889,12 @@ tr {
   border: 1px solid black;
 }
 
+@media screen and (max-width: 800px) {
+.about_img {
+  width: 100px;
+}
+}
+
 .about_desc td {
   padding: 0px 50px 10px 50px;
 }
