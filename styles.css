@@ -254,15 +254,11 @@ body {
   border-radius: 5px;
 }
 
-.card img:hover{
+.card img:hover {
   transform: translateY(-4px);
   transition: 0.15s;
   cursor: pointer;
-
 }
-
-
-
 
 .how_container img {
   width: 200px;
@@ -322,38 +318,44 @@ body {
 
 .price_dropdown {
   position: relative;
-  display:inline-block;
-  margin:0% 1%
+  display: inline-block;
+  margin: 0% 1%;
 }
 
 .dropdown_button {
   background-color: var(--darkgreen);
-  color:white;
-  padding:15px;
+  color: white;
+  padding: 15px;
   font-size: 15px;
-  border:none;
+  border: none;
 }
 
 .dropdown_content {
   display: none;
-  position:absolute;
+  position: absolute;
   background-color: var(--beige1);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown_content a {
-  color:black;
+  color: black;
   padding: 12px 19px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown_content a:hover {background-color: var(--hoverbeige);}
+.dropdown_content a:hover {
+  background-color: var(--hoverbeige);
+}
 
-.price_dropdown:hover .dropdown_content {display:block;}
+.price_dropdown:hover .dropdown_content {
+  display: block;
+}
 
-.price_dropdown:hover .dropdown_button {background-color: var(--darkergreen);}
+.price_dropdown:hover .dropdown_button {
+  background-color: var(--darkergreen);
+}
 
 /*--------- SELECT SECTION ---------*/
 .select {
@@ -488,24 +490,24 @@ body {
   height: 50vh;
 }
 
-.sliderFlexContainer{
+.sliderFlexContainer {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
   column-gap: 3rem;
 }
 
-.sliderFlexBoxOne{
+.sliderFlexBoxOne {
   grid-column: 1;
   grid-row: 1;
 }
 
-.sliderFlexBoxTwo{
+.sliderFlexBoxTwo {
   grid-column: 2;
   grid-row: 1;
 }
 
-.mpBigContainer{
+.mpBigContainer {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
@@ -514,7 +516,7 @@ body {
   column-gap: 5rem;
 }
 
-.mpContainer{
+.mpContainer {
   display: grid;
   grid-template-columns: 4;
   grid-template-rows: 6;
@@ -524,33 +526,35 @@ body {
   column-gap: 10px;
 }
 
-.mpContainerTwo{
+.mpContainerTwo {
   display: grid;
   grid-template-columns: 4;
   grid-template-rows: 8;
   align-content: center;
   justify-content: right;
   row-gap: 10px;
-  column-gap: 10px
+  column-gap: 10px;
 }
 
-.boxOne, .mpBox{
+.boxOne,
+.mpBox {
   grid-column: 2;
 }
 
-.boxTwo, .mpboxThree{
+.boxTwo,
+.mpboxThree {
   grid-column: 3;
 }
 
-.boxHead{
+.boxHead {
   grid-column: 1 / 4;
 }
 
-.columnOne{
+.columnOne {
   grid-column: 1;
 }
 
-.columnTwo{
+.columnTwo {
   grid-column: 2;
 }
 
@@ -610,25 +614,25 @@ div.slidercontainer {
   cursor: pointer; /* Cursor on hover */
 }
 
-.sliderLableMPW{
+.sliderLableMPW {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 
-.mpwLabel{
+.mpwLabel {
   grid-row: 1;
 }
 
-.sliderLabelFood{
+.sliderLabelFood {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.foodLabel{
+.foodLabel {
   grid-row: 1;
 }
 
@@ -660,20 +664,20 @@ div.button {
   background-color: rgb(121, 214, 0);
 }
 /*--------- PLAN SECTION ---------*/
-@media screen and (max-width: 800px){
-  .mpBigContainer{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      flex-wrap: wrap;
+@media screen and (max-width: 800px) {
+  .mpBigContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
 
-  .plan_section{
+  .plan_section {
     height: 90vh;
   }
 
-  .sliderFlexContainer{
+  .sliderFlexContainer {
     display: flex;
     flex-direction: column;
   }
@@ -764,7 +768,6 @@ div.mpw {
 }
 
 /*--------- REVIEWS SECTION ---------*/
-
 
 .stars {
   width: 20vw;

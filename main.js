@@ -31,22 +31,21 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-
 // Enable dropdown section on click
-function toggleDisplay(id) { 
+function toggleDisplay(id) {
   var el = document.getElementById(id);
   if (el.style.display === "none") {
-    el.style.display = "block"
-    scroll
+    el.style.display = "block";
+    scroll;
   }
 }
 
 // Change pricing table contents on click
 
-var last_value = 'protein'
+var last_value = "protein";
 
 function change_table(value) {
-    document.getElementById(last_value).style.display='none';
-    document.getElementById(value).style.display='block';
-    last_value = value;
+  document.getElementById(last_value).style.display = "none";
+  document.getElementById(value).style.display = "block";
+  last_value = value;
 }
