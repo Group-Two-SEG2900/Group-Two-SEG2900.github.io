@@ -495,7 +495,7 @@ body {
 
 .sliderFlexContainer{
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: 3;
   grid-template-rows: 1;
   column-gap: 3rem;
 }
@@ -506,6 +506,11 @@ body {
 }
 
 .sliderFlexBoxTwo{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.sliderFlexBoxThree{
   grid-column: 2;
   grid-row: 1;
 }
@@ -594,7 +599,7 @@ div.slidercontainer {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
   border-radius: 12.5px;
-  background: #689c23ff; /* Green background */
+  background: var(--darkgreen); /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
@@ -605,7 +610,7 @@ div.slidercontainer {
 .selectorslider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #689c23ff; /* Green background */
+  background: var(--darkgreen); /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
@@ -674,20 +679,16 @@ p.mplanhead {
 
 /* Style The Dropdown Button */
 .dropdown {
-  background-color: #689c23ff;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: var(--darkgreen);
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -716,11 +717,12 @@ p.mplanhead {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  opacity: 1;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover {
-  background-color: #466c14ff;
+  opacity: 1;
 }
 
 .mplabel {
