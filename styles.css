@@ -485,6 +485,10 @@ body {
 }
 
 /*--------- SLIDER SECTION ---------*/
+.sliders{
+  height: 80vh;
+}
+
 .plan_section {
   height: 50vh;
 }
@@ -508,6 +512,8 @@ body {
 
 .mpBigContainer{
   display: grid;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   grid-template-columns: 2;
   grid-template-rows: 1;
   justify-content: center;
@@ -553,14 +559,6 @@ body {
 
 .columnTwo{
   grid-column: 2;
-}
-
-.hselect {
-  text-align: center;
-  font-size: 300%;
-  margin-bottom: 25px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 .shead {
@@ -641,25 +639,6 @@ div.button {
   width: 150px;
 }
 
-.mpbutton {
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #689c23ff;
-  border: 2px solid #5a670aff;
-  height: 50px;
-  width: 150px;
-  font-size: large;
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.mpbutton:hover {
-  background-color: rgb(121, 214, 0);
-}
 /*--------- PLAN SECTION ---------*/
 @media screen and (max-width: 800px){
   .mpBigContainer{
@@ -674,6 +653,10 @@ div.button {
     height: 90vh;
   }
 
+  .sliders{
+    height: 150vh;
+  }
+
   .sliderFlexContainer{
     display: flex;
     flex-direction: column;
@@ -685,6 +668,8 @@ p.mplanhead {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* Style The Dropdown Button */
@@ -754,13 +739,15 @@ p.mplanhead {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: x-large;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 div.mpw {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   width: 60%;
 }
 
