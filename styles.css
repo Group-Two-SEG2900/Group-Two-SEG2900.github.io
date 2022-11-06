@@ -995,3 +995,21 @@ tr {
 .mobile h4 {
   margin: 20px;
 }
+
+/*MEALS SECTION*/
+
+.mealsSection{
+  height: 80vh;
+}
+
+.mealTitle{
+  display: none;
+}
+
+.mealImage{
+  display: none;
+}
+
+.mealDesc{
+  display: none;
+}

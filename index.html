@@ -281,9 +281,8 @@
 
 		<!--Big DropDown Section-->
 		<div class="make_plan_dropdown" id="enable_dropdown" style="display: none">
-			<!--PLAN + DROPDOWN-->
-			<!--SEBASTIAN-->
-
+		<!--PLAN + DROPDOWN-->
+		<!--SEBASTIAN-->
 			<div class="plan_section" id="plan">
 				<p class="mplanhead">
 					Make <em class="mplanhead">your</em> meal plan today!
@@ -439,8 +438,8 @@
 				</div>
 			</div>
 		<hr />
-			<!--SLIDERS-->
-			<!--SEBASTIAN-->
+		<!--SLIDERS-->
+		<!--SEBASTIAN-->
 		<div class="sliders">
 			<p class="mplanhead">Select your favourite foods and desired macros (portion based)</p>
 			<div class="slidercontainer">
@@ -646,9 +645,167 @@
 					</div>
 				</div>
 				<div class="button">
-					<button type="button" class="main_button">Make my plan!</button>
+					<a href="#meals"
+						><button
+							type="button" class="main_button" 
+							onclick="toggleDisplay('meals')">
+							Make my plan!
+						</button>
+					</a>
 				</div>
 			</div>
+		<hr />
+		<!--MEALS-->
+		<!--SEBASTIAN-->
+		<div class="mealsSection" id="meals" style="display: none">
+			<h1 class="mealsHeader">Meals we recommend</h1>
+			<div class="mealsGrid">
+				<div class="mealTitle1">
+					<p class="mealTitle" id="ketoTitle1">Keto sausage breakfast sandwich</p>
+					<p class="mealTitle" id="lacIntTitle1">Blueberry Pancakes</p>
+					<p class="mealTitle" id="noResTitle1">Tomato-Garlic Beef Spaghetti</p>
+					<p class="mealTitle" id="vegTitle1">Vegetable paella rice mix</p>
+					<p class="mealTitle" id="vgnTitle1">Vegan Pancakes</p>
+					<p class="mealTitle" id="glutenTitle1"></p>
+				</div>
+				<div class="meal1">
+					<img src="images/mealKeto1.jpg" alt="A picture of a delicious meal" class="mealImage" id="ketoImage1">
+					<img src="images/mealLacInt1.png" alt="A picture of a delicious meal" class="mealImage" id="lacIntImage1">
+					<img src="images/mealNoRes1.png" alt="A picture of a delicious meal" class="mealImage" id="noResImage1">
+					<img src="images/mealVeg1.jpg" alt="A picture of a delicious meal" class="mealImage" id="vegImage1">
+					<img src="images/mealVgn1.png" alt="A picture of a delicious meal" class="mealImage" id="vgnImage1">
+					<img src="" alt="A picture of a delicious meal" class="mealImage" id="glutenImage1">
+				</div>
+				<div class="mealDesc1">
+					<p id="ketoDesc1" class="mealDesc">Description</p>
+					<p id="lacIntDesc1" class="mealDesc">Description</p>
+					<p id="noResDesc1" class="mealDesc">Description</p>
+					<p id="vegDesc1" class="mealDesc">Description</p>
+					<p id="vgnDesc1" class="mealDesc">Description</p>
+					<p id="glutenDesc1" class="mealDesc">Description</p>
+				</div>
+				<div class="mealTitle2">
+					<p class="mealTitle" id="ketoTitle2">Brussel sprouts hash</p>
+					<p class="mealTitle" id="lacIntTitle2">Poached Eggs over Avocado Toast</p>
+					<p class="mealTitle" id="noResTitle2">Creamy Alfredo-Style Shrimp Linguine</p>
+					<p class="mealTitle" id="vegTitle2">Eggplant Lasagna</p>
+					<p class="mealTitle" id="vgnTitle2">Vegan Breakfast Burrito</p>
+					<p class="mealTitle" id="glutenTitle2"></p>
+				</div>
+				<div class="meal2">
+					<img src="images/mealKeto2.png" alt="A picture of a delicious meal" class="mealImage" id="ketoImage2">
+					<img src="images/mealLacInt2.png" alt="A picture of a delicious meal" class="mealImage" id="lacIntImage2">
+					<img src="images/mealNoRes2.png" alt="A picture of a delicious meal" class="mealImage" id="noResImage2">
+					<img src="images/mealVeg2.jpg" alt="A picture of a delicious meal" class="mealImage" id="vegImage2">
+					<img src="images/mealVgn2.png" alt="A picture of a delicious meal" class="mealImage" id="vgnImage2">
+					<img src="" alt="A picture of a delicious meal" class="mealImage" id="glutenImage2">
+				</div>
+				<div class="mealDesc2">
+					<p class="mealDesc" id="ketoDesc2">Description</p>
+					<p class="mealDesc" id="lacIntDesc2">Description</p>
+					<p class="mealDesc" id="noResDesc2">Description</p>
+					<p class="mealDesc" id="vegDesc2">Description</p>
+					<p class="mealDesc" id="vgnDesc2">Description</p>
+					<p class="mealDesc" id="glutenDesc2">Description</p>
+				</div>
+				<div class="mealTitle3">
+					<p class="mealTitle" id="ketoTitle3">Keto chili</p>
+					<p class="mealTitle" id="lacIntTitle3">Salmon Salad Sandwich</p>
+					<p class="mealTitle" id="noResTitle3">Maple-Ginger Chicken Stir-Fry</p>
+					<p class="mealTitle" id="vegTitle3">Lentil tortilla soup</p>
+					<p class="mealTitle" id="vgnTitle3">Falafel Salad</p>
+					<p class="mealTitle" id="glutenTitle3"></p>
+				</div>
+				<div class="meal3">
+					<img src="images/mealKeto3.jpg" alt="A picture of a delicious meal" class="mealImage" id="ketoImage3">
+					<img src="images/mealLacInt3.png" alt="A picture of a delicious meal" class="mealImage" id="lacIntImage3">
+					<img src="images/mealNoRes3.png" alt="A picture of a delicious meal" class="mealImage" id="noResImage3">
+					<img src="images/mealVeg3.jpg" alt="A picture of a delicious meal" class="mealImage" id="vegImage3">
+					<img src="images/mealVgn3.png" alt="A picture of a delicious meal" class="mealImage" id="vgnImage3">
+					<img src="" alt="A picture of a delicious meal" class="mealImage" id="glutenImage3">
+				</div>
+				<div class="mealDesc3">
+					<p class="mealDesc" id="ketoDesc3">Description</p>
+					<p class="mealDesc" id="lacIntDesc3">Description</p>
+					<p class="mealDesc" id="noResDesc3">Description</p>
+					<p class="mealDesc" id="vegDesc3">Description</p>
+					<p class="mealDesc" id="vgnDesc3">Description</p>
+					<p class="mealDesc" id="glutenDesc3">Description</p>
+				</div>
+				<div class="mealTitle4">
+					<p class="mealTitle" id="ketoTitle4">Loaded cauliflower salad</p>
+					<p class="mealTitle" id="lacIntTitle4">Vegetable Frittata</p>
+					<p class="mealTitle" id="noResTitle4">Roasted Double Salmon</p>
+					<p class="mealTitle" id="vegTitle4">Curry noodle soup</p>
+					<p class="mealTitle" id="vgnTitle4">Quinoa Bowl</p>
+					<p class="mealTitle" id="glutenTitle4"></p>
+				</div>
+				<div class="meal4">
+					<img src="images/mealKeto4.jpg" alt="A picture of a delicious meal" class="mealImage" id="ketoImage4">
+					<img src="images/mealLacInt4.png" alt="A picture of a delicious meal" class="mealImage" id="lacIntImage4">
+					<img src="images/mealNoRes4.png" alt="A picture of a delicious meal" class="mealImage" id="noResImage4">
+					<img src="images/mealVeg4.png" alt="A picture of a delicious meal" class="mealImage" id="vegImage4">
+					<img src="images/mealVgn4.png" alt="A picture of a delicious meal" class="mealImage" id="vgnImage4">
+					<img src="" alt="A picture of a delicious meal" class="mealImage" id="glutenImage4">
+				</div>
+				<div class="mealDesc4">
+					<p class="mealDesc" id="ketoDesc4">Description</p>
+					<p class="mealDesc" id="lacIntDesc4">Description</p>
+					<p class="mealDesc" id="noResDesc4">Description</p>
+					<p class="mealDesc" id="vegDesc4">Description</p>
+					<p class="mealDesc" id="vgnDesc4">Description</p>
+					<p class="mealDesc" id="glutenDesc4">Description</p>
+				</div>
+				<div class="mealTitle5">
+					<p class="mealTitle" id="ketoTitle5">Baked pork chops</p>
+					<p class="mealTitle" id="lacIntTitle5">Spinach and mushroom barley pilaf</p>
+					<p class="mealTitle" id="noResTitle5">Squash and Bacon Alfredo</p>
+					<p class="mealTitle" id="vegTitle5">Breakfast egg casserole</p>
+					<p class="mealTitle" id="vgnTitle5">Creamy Garlic Pasta</p>
+					<p class="mealTitle" id="glutenTitle5"></p>
+				</div>
+				<div class="meal5">
+					<img src="images/mealKeto5.jpg" alt="A picture of a delicious meal" class="mealImage" id="ketoImage5">
+					<img src="images/mealLacInt5.png" alt="A picture of a delicious meal" class="mealImage" id="lacIntImage5">
+					<img src="images/mealNoRes5.png" alt="A picture of a delicious meal" class="mealImage" id="noResImage5">
+					<img src="images/mealVeg5.jpg" alt="A picture of a delicious meal" class="mealImage" id="vegImage5">
+					<img src="images/mealVgn5.png" alt="A picture of a delicious meal" class="mealImage" id="vgnImage5">
+					<img src="" alt="A picture of a delicious meal" class="mealImage" id="glutenImage5">
+				</div>
+				<div class="mealDesc5">
+					<p class="mealDesc" id="ketoDesc5">Description</p>
+					<p class="mealDesc" id="lacIntDesc5">Description</p>
+					<p class="mealDesc" id="noResDesc5">Description</p>
+					<p class="mealDesc" id="vegDesc5">Description</p>
+					<p class="mealDesc" id="vgnDesc5">Description</p>
+					<p class="mealDesc" id="glutenDesc5">Description</p>
+				</div>
+				<div class="mealTitle6">
+					<p class="mealTitle" id="ketoTitle6">Keto chicken parmesan</p>
+					<p class="mealTitle" id="lacIntTitle6">Pork & Okra Creole</p>
+					<p class="mealTitle" id="noResTitle6">Sticky ginger beef and rice bowl</p>
+					<p class="mealTitle" id="vegTitle6">Vegetable Frittata</p>
+					<p class="mealTitle" id="vgnTitle6">Vegan hamburger</p>
+					<p class="mealTitle" id="glutenTitle6"></p>
+				</div>
+				<div class="meal6">
+					<img src="images/mealKeto6.jpg" alt="A picture of a delicious meal" class="mealImage" id="ketoImage6">
+					<img src="images/mealLacInt6.png" alt="A picture of a delicious meal" class="mealImage" id="lacIntImage6">
+					<img src="images/mealNoRes6.png" alt="A picture of a delicious meal" class="mealImage" id="noResImage6">
+					<img src="images/mealVeg6.png" alt="A picture of a delicious meal" class="mealImage" id="vegImage6">
+					<img src="images/mealVgn6.png" alt="A picture of a delicious meal" class="mealImage" id="vgnImage6">
+					<img src="" alt="A picture of a delicious meal" class="mealImage" id="glutenImage6">
+				</div>
+				<div class="mealDesc6">
+					<p class="mealDesc" id="ketoDesc6">Description</p>
+					<p class="mealDesc" id="lacIntDesc6">Description</p>
+					<p class="mealDesc" id="noResDesc6">Description</p>
+					<p class="mealDesc" id="vegDesc6">Description</p>
+					<p class="mealDesc" id="vgnDesc6">Description</p>
+					<p class="mealDesc" id="glutenDesc6">Description</p>
+				</div>
+			</div>
+			<button class="main_button">Checkout</button>
 		<hr />
 		<!--REVIEWS-->
 		<!--XAVIER-->
