@@ -1002,14 +1002,116 @@ tr {
   height: 80vh;
 }
 
+.mealsGrid{
+  display: grid;
+  grid-template-columns: 6;
+  grid-template-rows: 2;
+}
+
 .mealTitle{
   display: none;
 }
 
 .mealImage{
   display: none;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .mealDesc{
+  display: none;
+}
+
+.mealTitle1, .mealTitle4, 
+.meal1, .meal4 {
+  grid-column: 1;
+}
+
+.mealDesc1, .mealDesc4 {
+  grid-column: 2;
+}
+
+.mealTitle2, .mealTitle5, 
+.meal2, .meal5 {
+  grid-column: 3;
+}
+
+.mealDesc2, .mealDesc5 {
+  grid-column: 4;
+}
+
+.mealTitle3, .mealTitle6, 
+.meal3, .meal6 {
+  grid-column: 5;
+}
+
+.mealDesc3, .mealDesc6 {
+  grid-column: 6;
+}
+
+.mealTitle1, .mealTitle2, .mealTitle3, 
+.meal1, .meal2, .meal3, 
+.mealDesc1, .mealDesc2, .mealDesc3 {
+  grid-row: 1;
+}
+
+.mealTitle4, .mealTitle5, .mealTitle6, 
+.meal4, .meal5, .meal6, 
+.mealDesc4, .mealDesc5, .mealDesc6 {
+  grid-row: 2;
+}
+
+#ketoTitle1, #ketoTitle2, #ketoTitle3, 
+#ketoTitle4, #ketoTitle5, #ketoTitle6, 
+#ketoImage1, #ketoImage2, #ketoImage3, 
+#ketoImage4, #ketoImage5, #ketoImage6, 
+#ketoDesc1, #ketoDesc2, #ketoDesc3, 
+#ketoDesc4, #ketoDesc5, #ketoDesc6 {
+  display: none;
+}
+
+#vgnTitle1, #vgnTitle2, #vgnTitle3, 
+#vgnTitle4, #vgnTitle5, #vgnTitle6, 
+#vgnImage1, #vgnImage2, #vgnImage3, 
+#vgnImage4, #vgnImage5, #vgnImage6, 
+#vgnDesc1, #vgnDesc2, #vgnDesc3, 
+#vgnDesc4, #vgnDesc5, #vgnDesc6 {
+  display: none;
+}
+
+#vegTitle1, #vegTitle2, #vegTitle3, 
+#vegTitle4, #vegTitle5, #vegTitle6, 
+#vegImage1, #vegImage2, #vegImage3, 
+#vegImage4, #vegImage5, #vegImage6, 
+#vegDesc1, #vegDesc2, #vegDesc3, 
+#vegDesc4, #vegDesc5, #vegDesc6 {
+  display: none;
+}
+
+#lacIntTitle1, #lacIntTitle2, #lacIntTitle3, 
+#lacIntTitle4, #lacIntTitle5, #lacIntTitle6, 
+#lacIntImage1, #lacIntImage2, #lacIntImage3, 
+#lacIntImage4, #lacIntImage5, #lacIntImage6, 
+#lacIntDesc1, #lacIntDesc2, #lacIntDesc3, 
+#lacIntDesc4, #lacIntDesc5, #lacIntDesc6 {
+  display: none;
+}
+
+#glutenTitle1, #glutenTitle2, #glutenTitle3, 
+#glutenTitle4, #glutenTitle5, #glutenTitle6, 
+#glutenImage1, #glutenImage2, #glutenImage3, 
+#glutenImage4, #glutenImage5, #glutenImage6, 
+#glutenDesc1, #glutenDesc2, #glutenDesc3, 
+#glutenDesc4, #glutenDesc5, #glutenDesc6 {
+  display: none;
+}
+
+#noResTitle1, #noResTitle2, #noResTitle3, 
+#noResTitle4, #noResTitle5, #noResTitle6, 
+#noResImage1, #noResImage2, #noResImage3, 
+#noResImage4, #noResImage5, #noResImage6, 
+#noResDesc1, #noResDesc2, #noResDesc3, 
+#noResDesc4, #noResDesc5, #noResDesc6 {
   display: none;
 }
