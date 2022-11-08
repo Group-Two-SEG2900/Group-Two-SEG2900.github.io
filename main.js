@@ -51,33 +51,49 @@ function change_table(value) {
     last_value = value;
 }
 
-// credit to SamGoody on StackOverflow for this function
-function adjustCSSRules(selector, props, sheets){
+// Change displayed meals to match the meal restriction on click
 
-  // get stylesheet(s)
-  if (!sheets) sheets = [...document.styleSheets];
-  else if (sheets.sup){    // sheets is a string
-      let absoluteURL = new URL(sheets, document.baseURI).href;
-      sheets = [...document.styleSheets].filter(i => i.href == absoluteURL);
-      }
-  else sheets = [sheets];  // sheets is a stylesheet
+var last_value = 'vgn'
 
-  // CSS (& HTML) reduce spaces in selector to one.
-  selector = selector.replace(/\s+/g, ' ');
-  const findRule = s => [...s.cssRules].reverse().find(i => i.selectorText == selector)
-  let rule = sheets.map(findRule).filter(i=>i).pop()
+function changeMeals(value) {
 
-  const propsArr = props.sup
-      ? props.split(/\s*;\s*/).map(i => i.split(/\s*:\s*/)) // from string
-      : Object.entries(props);                              // from Object
+    document.getElementById(last_value + 'Title1').style.display = 'none';
+    document.getElementById(last_value + 'Image1').style.display = 'none';
+    document.getElementById(last_value + 'Desc1').style.display = 'none';
+    document.getElementById(last_value + 'Title2').style.display = 'none';
+    document.getElementById(last_value + 'Image2').style.display = 'none';
+    document.getElementById(last_value + 'Desc2').style.display = 'none';
+    document.getElementById(last_value + 'Title3').style.display = 'none';
+    document.getElementById(last_value + 'Image3').style.display = 'none';
+    document.getElementById(last_value + 'Desc3').style.display = 'none';
+    document.getElementById(last_value + 'Title4').style.display = 'none';
+    document.getElementById(last_value + 'Image4').style.display = 'none';
+    document.getElementById(last_value + 'Desc4').style.display = 'none';
+    document.getElementById(last_value + 'Title5').style.display = 'none';
+    document.getElementById(last_value + 'Image5').style.display = 'none';
+    document.getElementById(last_value + 'Desc5').style.display = 'none';
+    document.getElementById(last_value + 'Title6').style.display = 'none';
+    document.getElementById(last_value + 'Image6').style.display = 'none';
+    document.getElementById(last_value + 'Desc6').style.display = 'none';
 
-  if (rule) for (let [prop, val] of propsArr){
-      // rule.style[prop] = val; is against the spec, and does not support !important.
-      rule.style.setProperty(prop, ...val.split(/ *!(?=important)/));
-      }
-  else {
-      sheet = sheets.pop();
-      if (!props.sup) props = propsArr.reduce((str, [k, v]) => `${str}; ${k}: ${v}`, '');
-      sheet.insertRule(`${selector} { ${props} }`, sheet.cssRules.length);
-      }
-  }
+    document.getElementById(value + 'Title1').style.display = 'block';
+    document.getElementById(value + 'Image1').style.display = 'block';
+    document.getElementById(value + 'Desc1').style.display = 'block';
+    document.getElementById(value + 'Title2').style.display = 'block';
+    document.getElementById(value + 'Image2').style.display = 'block';
+    document.getElementById(value + 'Desc2').style.display = 'block';
+    document.getElementById(value + 'Title3').style.display = 'block';
+    document.getElementById(value + 'Image3').style.display = 'block';
+    document.getElementById(value + 'Desc3').style.display = 'block';
+    document.getElementById(value + 'Title4').style.display = 'block';
+    document.getElementById(value + 'Image4').style.display = 'block';
+    document.getElementById(value + 'Desc4').style.display = 'block';
+    document.getElementById(value + 'Title5').style.display = 'block';
+    document.getElementById(value + 'Image5').style.display = 'block';
+    document.getElementById(value + 'Desc5').style.display = 'block';
+    document.getElementById(value + 'Title6').style.display = 'block';
+    document.getElementById(value + 'Image6').style.display = 'block';
+    document.getElementById(value + 'Desc6').style.display = 'block';
+
+    last_value = value;
+}

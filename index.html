@@ -318,12 +318,12 @@
 							</div>
 							<div class="boxTwo">
 								<select name="diet" class="dropdown"
-									onchange="if (this.selectedIndex==1) adjustCSSRules('#vgnTitle1, #vgnTitle2, #vgnTitle3, #vgnTitle4, #vgnTitle5, #vgnTitle6, #vgnImage1, #vgnImage2, #vgnImage3, #vgnImage4, #vgnImage5, #vgnImage6, #vgnDesc1, #vgnDesc2, #vgnDesc3, #vgnDesc4, #vgnDesc5, #vgnDesc6', 'display: block', 'styles.css');
-												else if (this.selectedIndex==2) adjustCSSRules('#vegTitle1, #vegTitle2, #vegTitle3, #vegTitle4, #vegTitle5, #vegTitle6, #vegImage1, #vegImage2, #vegImage3, #vegImage4, #vegImage5, #vegImage6, #vegDesc1, #vegDesc2, #vegDesc3, #vegDesc4, #vegDesc5, #vegDesc6', 'display: block', 'styles.css');
-												else if (this.selectedIndex==3) adjustCSSRules('#ketoTitle1, #ketoTitle2, #ketoTitle3, #ketoTitle4, #ketoTitle5, #ketoTitle6, #ketoImage1, #ketoImage2, #ketoImage3, #ketoImage4, #ketoImage5, #ketoImage6, #ketoDesc1, #ketoDesc2, #ketoDesc3, #ketoDesc4, #ketoDesc5, #ketoDesc6', 'display: block', 'styles.css');
-												else if (this.selectedIndex==4) adjustCSSRules('#lacIntTitle1, #lacIntTitle2, #lacIntTitle3, #lacIntTitle4, #lacIntTitle5, #lacIntTitle6, #lacIntImage1, #lacIntImage2, #lacIntImage3, #lacIntImage4, #lacIntImage5, #lacIntImage6, #lacIntDesc1, #lacIntDesc2, #lacIntDesc3, #lacIntDesc4, #lacIntDesc5, #lacIntDesc6', 'display: block', 'styles.css');
-												else if (this.selectedIndex==5) adjustCSSRules('#glutenTitle1, #glutenTitle2, #glutenTitle3, #glutenTitle4, #glutenTitle5, #glutenTitle6, #glutenImage1, #glutenImage2, #glutenImage3, #glutenImage4, #glutenImage5, #glutenImage6, #glutenDesc1, #glutenDesc2, #glutenDesc3, #glutenDesc4, #glutenDesc5, #glutenDesc6', 'display: block', 'styles.css');
-												else if (this.selectedIndex==6) adjustCSSRules('#noResTitle1, #noResTitle2, #noResTitle3, #noResTitle4, #noResTitle5, #noResTitle6, #noResImage1, #noResImage2, #noResImage3, #noResImage4, #noResImage5, #noResImage6, #noResDesc1, #noResDesc2, #noResDesc3, #noResDesc4, #noResDesc5, #noResDesc6', 'display: block', 'styles.css');"
+									onchange="if (this.selectedIndex == 1) changeMeals('vgn')
+												else if (this.selectedIndex==2) changeMeals('veg')
+												else if (this.selectedIndex==3) changeMeals('keto')
+												else if (this.selectedIndex==4) changeMeals('lacInt')
+												else if (this.selectedIndex==5) changeMeals('gluten')
+												else if (this.selectedIndex==6) changeMeals('noRes');"
 								>
 									<option value="0">
 										Choose one
