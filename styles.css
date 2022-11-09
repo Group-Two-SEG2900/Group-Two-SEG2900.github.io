@@ -175,10 +175,15 @@ body {
   font-size: 45px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .main_section {
     background-size: 220vw;
-    background-position: bottom;
+    background-position: center;
+  }
+
+  .main_section h1 {
+    margin-top: 200px;
+    font-size: 35px;
   }
 }
 
