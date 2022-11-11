@@ -492,6 +492,9 @@ body {
 }
 
 /*--------- SLIDER SECTION ---------*/
+.sliders{
+  padding: 0 15px;
+}
 
 .sliderFlexContainer {
   display: grid;
@@ -659,6 +662,7 @@ div.button {
   .sliderFlexContainer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -666,17 +670,17 @@ div.button {
   padding: 0 15px;
 }
 
-p.mplanhead {
+.mplanhead {
   font-size: 50px;
-  padding: 0 10px;
+  padding: 10px 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-@media screen and (max-width: 800px) {
-  p.mplanhead {
+@media screen and (max-width: 900px) {
+  .mplanhead {
     font-size: 40px;
   }
 }
@@ -1002,24 +1006,32 @@ tr {
 /*MEALS SECTION*/
 
 .mealsSection {
-  height: 80vh;
+  padding: 0 15px;
+  flex-wrap: wrap;
 }
 
 .mealsGrid {
   display: grid;
+  justify-items: center;
   grid-template-columns: 6;
-  grid-template-rows: 2;
+  grid-template-rows: 4;
 }
 
 .mealTitle {
   display: none;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .mealImage {
   display: none;
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .mealDesc {
@@ -1064,26 +1076,33 @@ tr {
 
 .mealTitle1,
 .mealTitle2,
-.mealTitle3,
+.mealTitle3 {
+  grid-row: 1;
+}
+
 .meal1,
 .meal2,
 .meal3,
 .mealDesc1,
 .mealDesc2,
 .mealDesc3 {
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .mealTitle4,
 .mealTitle5,
-.mealTitle6,
+.mealTitle6 {
+  grid-row: 3;
+}
+
+
 .meal4,
 .meal5,
 .meal6,
 .mealDesc4,
 .mealDesc5,
 .mealDesc6 {
-  grid-row: 2;
+  grid-row: 4;
 }
 
 #ketoTitle1,
