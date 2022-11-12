@@ -4,12 +4,6 @@
   --hoverbeige: rgb(230, 207, 167);
   --beige3: rgb(243, 199, 124);
   --beige4: rgb(234, 183, 96);
-  --nicered: #f64f4f;
-  --green: #466c14ff;
-  --lightgreen: #689c23ff;
-  --verylightgreen: #a5ff8c;
-  --pukegreen: #5a670aff;
-  --maybeorange: rgb(187, 100, 12);
   --darkgreen: rgb(0, 94, 59);
   --darkergreen: rgb(0, 76, 48);
 }
@@ -492,7 +486,7 @@ body {
 }
 
 /*--------- SLIDER SECTION ---------*/
-.sliders{
+.sliders {
   padding: 0 15px;
 }
 
@@ -1094,7 +1088,6 @@ tr {
 .mealTitle6 {
   grid-row: 3;
 }
-
 
 .meal4,
 .meal5,
