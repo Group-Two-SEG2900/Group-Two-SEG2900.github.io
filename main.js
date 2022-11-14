@@ -40,6 +40,15 @@ function toggleDisplay(id) {
   }
 }
 
+// Hide elements (mainly used for the default message if the user does not enter enough info in the meal plan maker)
+function hideDisplay(id) {
+  var el = document.getElementById(id);
+  if (el.style.display === "block") {
+    el.style.display = "none";
+    scroll;
+  }
+}
+
 // Change pricing table contents on click
 
 var last_value = "protein";

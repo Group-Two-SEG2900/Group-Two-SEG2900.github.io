@@ -319,12 +319,12 @@
                 <select
                   name="diet"
                   class="dropdown"
-                  onchange="if (this.selectedIndex == 1) changeMeals('vgn')
-							else if (this.selectedIndex==2) changeMeals('veg')
-							else if (this.selectedIndex==3) changeMeals('keto')
-							else if (this.selectedIndex==4) changeMeals('lacInt')
-							else if (this.selectedIndex==5) changeMeals('gluten')
-							else if (this.selectedIndex==6) changeMeals('noRes');"
+                  onchange="if (this.selectedIndex == 1) changeMeals('vgn'), hideDisplay('defaultMessage')
+							else if (this.selectedIndex==2) changeMeals('veg'), hideDisplay('defaultMessage')
+							else if (this.selectedIndex==3) changeMeals('keto'), hideDisplay('defaultMessage')
+							else if (this.selectedIndex==4) changeMeals('lacInt'), hideDisplay('defaultMessage')
+							else if (this.selectedIndex==5) changeMeals('gluten'), hideDisplay('defaultMessage')
+							else if (this.selectedIndex==6) changeMeals('noRes'), hideDisplay('defaultMessage');"
                 >
                   <option value="0">Choose one</option>
                   <option value="1">Vegan</option>
@@ -339,7 +339,7 @@
           </div>
           <div class="columnTwo">
             <span class="mpContainerTwo">
-              <div class="boxHead"><h3 class="mph3">More info</h3></div>
+              <div class="boxHead"><h3 class="mph3">More info (optional)</h3></div>
               <div class="mpBox">
                 <th>
                   <label for="gender" class="mplabel">Sex at Birth</label>
@@ -676,14 +676,17 @@
     <!--SEBASTIAN-->
     <div class="mealsSection" id="meals" style="display: none">
       <h1 class="mplanhead">Meals we recommend</h1>
+      <div id="defaultMessage" style="display: block;">
+        <p><center>Oops! You haven't entered enough information to get recommended meals. Please fill out the required fields in the "Make my Plan" section then click on "Make my plan!".</center></p>
+      </div>
       <div class="mealsGrid">
         <div class="mealTitle1">
           <p class="mealTitle" id="ketoTitle1">
-            Keto sausage breakfast sandwich
+            Keto Sausage Breakfast Sandwich
           </p>
           <p class="mealTitle" id="lacIntTitle1">Blueberry Pancakes</p>
           <p class="mealTitle" id="noResTitle1">Tomato-Garlic Beef Spaghetti</p>
-          <p class="mealTitle" id="vegTitle1">Vegetable paella rice mix</p>
+          <p class="mealTitle" id="vegTitle1">Vegetable Paella Rice Mix</p>
           <p class="mealTitle" id="vgnTitle1">Vegan Pancakes</p>
           <p class="mealTitle" id="glutenTitle1">Paleo Pancakes</p>
         </div>
@@ -728,32 +731,40 @@
         <div class="mealDesc1">
           <p id="ketoDesc1" class="mealDesc">
             Made with sausage patties sliced avocado and egg, these hearty sandwiches have everything you need to start off the day right.
-		        shipped ingredients: eggs, milk, butter, cheddar cheese, sausage patties, avocado
+		        <br>
+            <br>SHIPPED INGREDIENTS: eggs, milk, butter, cheddar cheese, sausage patties, avocado</br>
           </p>
           <p id="lacIntDesc1" class="mealDesc">
             Fluffy blueberry pancakes made with almond milk.
-		        shipped ingredients: flour, cornstarch, baking powder, eggs, honey, blueberries
+		        <br>
+            <br>SHIPPED INGREDIENTS: flour, cornstarch, baking powder, eggs, honey, blueberries</br>
           </p>
           <p id="noResDesc1" class="mealDesc">
             The meat sauce in this one actually includes a splash of soy sauce, which works wonders for it. The saltiness is a subtle but tasty addition to the succulent ground beef, aromatic Italian seasoning and juicy tomatoes. It's a colourful and flavourful dish that's perfect for a night in!
-            Shipped ingredients: ground beef, spaghetti, zucchini, bell peppers, onions, garlic, soy sauce, Italian seasoning, tomato sauce, Parmesan cheese
+            <br>
+            <br>SHIPPED INGREDIENTS: ground beef, spaghetti, zucchini, bell peppers, onions, garlic, soy sauce, Italian seasoning, tomato sauce, Parmesan cheese</br>
           </p>
           <p id="vegDesc1" class="mealDesc">
             This veggie-packed paella comes together in under an hour, and, even better, most of the cooking happens in the oven. Briefly returning the skillet to the stovetop after baking is the key to achieving a crispy rice crust on the bottom.
-            Shipped ingredients: Zucchini, mushrooms, onions, garlic, paprika, tomatoes, paella rice, peas, piquillo peppers, baby spinach,
-            Vegetable broth, parsley
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: Zucchini, mushrooms, onions, garlic, paprika, tomatoes, paella rice, peas, piquillo peppers, baby spinach,
+              Vegetable broth, parsley
+            </br>
           </p>
           <p id="vgnDesc1" class="mealDesc">
             These banana pancakes are massively fluffy, delicious, and quick and easy to whip up.
-            Shipped ingredients: vegan pancake mix, bananas, maple syrup
+            <br>
+            <br>SHIPPED INGREDIENTS: vegan pancake mix, bananas, maple syrup</br>
           </p>
           <p id="glutenDesc1" class="mealDesc">
             These paleo pancakes are a perennial breakfast winner. Made from almond flour, they’re light, fluffy and delicious. They’re the best paleo pancakes and could easily be mistaken for traditional pancakes.
-		        shipped ingredients: almond flour, baking soda, eggs, almond milk, honey, vinegar, vanilla extract
+		        <br>
+            <br>SHIPPED INGREDIENTS: almond flour, baking soda, eggs, almond milk, honey, vinegar, vanilla extract</br>
           </p>
         </div>
         <div class="mealTitle2">
-          <p class="mealTitle" id="ketoTitle2">Brussel sprouts hash</p>
+          <p class="mealTitle" id="ketoTitle2">Brussel Sprouts Hash</p>
           <p class="mealTitle" id="lacIntTitle2">
             Poached Eggs over Avocado Toast
           </p>
@@ -805,37 +816,45 @@
         <div class="mealDesc2">
           <p class="mealDesc" id="ketoDesc2">
             Brussels sprouts are the perfect vegetable. They are amazing roasted, go great with mac and cheese, and now they make up the best low-carb hash.
-		        shipped ingredients: brussel sprouts, bacon, onions, eggs, garlic, chilli flakes
+		        <br>
+            <br>SHIPPED INGREDIENTS: brussel sprouts, bacon, onions, eggs, garlic, chilli flakes</br>
           </p>
           <p class="mealDesc" id="lacIntDesc2">
             This easy poached egg and avocado toast takes less than 10 minutes from start to finish! A healthy whole food breakfast to start your day right!
-		        shipped ingredients: pumpernickel loaf, guacamole, eggs
+		        <br>
+            <br>SHIPPED INGREDIENTS: pumpernickel loaf, guacamole, eggs</br>
           </p>
           <p class="mealDesc" id="noResDesc2">
             All the elements in this dish are classics that are made for one another. Shrimp, bacon and spinach have nothing but love for one another and couldn't pair better with a creamy sauce and pasta.
-            Shipped ingredients: shrimp, bacon strips, linguine, baby spinach, Parmesan cheese, sour cream, cream cheese, garlic, green peas
+            <br>
+            <br>SHIPPED INGREDIENTS: shrimp, bacon strips, linguine, baby spinach, Parmesan cheese, sour cream, cream cheese, garlic, green peas</br>
           </p>
           <p class="mealDesc" id="vegDesc2">
             This hearty dinner clocks in somewhere between lasagna and eggplant parm, and we think it may just be better than both.
-            Shipped ingredients: eggplants, garlic, onion, oregano, marinara sauce, whole milk ricotta, 
-            Parmesan cheese, eggs, mozzarella cheese, parsley
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: eggplants, garlic, onion, oregano, marinara sauce, whole milk ricotta,
+              Parmesan cheese, eggs, mozzarella cheese, parsley
+            </br>
           </p>
           <p class="mealDesc" id="vgnDesc2">
             This vegan breakfast burrito is filled with delicious ingredients and is so quick and easy to make. These burritos are filled with potatoes, beans, avocado, tofu, peppers, salsa taco seasoning and fresh cilantro!
-            Shipped ingredients: tofu, potatoes, beans, avocado, peppers, salsa, cilantro, tex-mix seasoning, tortillas
+            <br>
+            <br>SHIPPED INGREDIENTS: tofu, potatoes, beans, avocado, peppers, salsa, cilantro, tex-mix seasoning, tortillas</br>
           </p>
           <p class="mealDesc" id="glutenDesc2">
             Healthy eggs Benedict is a creative breakfast recipe made up of four delicious layers. Sweet potato toast is topped with Canadian bacon, poached eggs and a drizzle of creamy hollandaise sauce. Plus it’s gluten-free, paleo and Whole30 compliant!
-		        shipped ingredients: sweet potato, bacon, eggs, hollandaise sauce mix, butter
+		        <br>
+            <br>SHIPPED INGREDIENTS: sweet potato, bacon, eggs, hollandaise sauce mix, butter</br>
           </p>
         </div>
         <div class="mealTitle3">
-          <p class="mealTitle" id="ketoTitle3">Keto chili</p>
+          <p class="mealTitle" id="ketoTitle3">Keto Chili</p>
           <p class="mealTitle" id="lacIntTitle3">Salmon Salad Sandwich</p>
           <p class="mealTitle" id="noResTitle3">
             Maple-Ginger Chicken Stir-Fry
           </p>
-          <p class="mealTitle" id="vegTitle3">Lentil tortilla soup</p>
+          <p class="mealTitle" id="vegTitle3">Lentil Tortilla Soup</p>
           <p class="mealTitle" id="vgnTitle3">Falafel Salad</p>
           <p class="mealTitle" id="glutenTitle3">Baked Salmon</p>
         </div>
@@ -880,36 +899,46 @@
         <div class="mealDesc3">
           <p class="mealDesc" id="ketoDesc3">
             An easy and delicious low carb keto chili recipe without beans, made in a slow cooker or pot.
-		        shipped ingredients: ground beef, chili pice mix, garlic, celery stalks, onions, mushrooms
+		        <br>
+            <br>SHIPPED INGREDIENTS: ground beef, chili pice mix, garlic, celery stalks, onions, mushrooms</br>
           </p>
           <p class="mealDesc" id="lacIntDesc3">
             A creamy lemon and dill mixture combines with canned salmon to create these easy Salmon Salad Sandwiches. A delicious, no-fuss meal that can be prepared in just 10 minutes.
-		        shipped ingredients: whole-grain loaf, canned salmon, mayonnaise, celery stalks, tomatoes, iceberg lettuce, lemon juice, dill
+		        <br>
+            <br>SHIPPED INGREDIENTS: whole-grain loaf, canned salmon, mayonnaise, celery stalks, tomatoes, iceberg lettuce, lemon juice, dill</br>
           </p>
           <p class="mealDesc" id="noResDesc3">
             Maple, ginger and soy sauce team up to make a tangy sauce that will make this stir-fry night a memorable one. In this sweet and savoury sauce, you'll find carrots, peppers and juicy chicken. A base of garlicky rice and a garnish of green onions complete this delicious stir-fry.
-            Shipped ingredients	: chicken breasts, rice, carrots, bell peppers, green onion, ginger, oyster sauce, maple syrup, 
-            Soy sauce, cornstarch, garlic
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: chicken breasts, rice, carrots, bell peppers, green onion, ginger, oyster sauce, maple syrup,
+              Soy sauce, cornstarch, garlic
+            </br>
           </p>
           <p class="mealDesc" id="vegDesc3">
             Most Instant Pot recipes are meat-centric. But this satisfying vegetarian soup is all lentils and veggies, along with loads of Tex-Mex flavors like chili pepper, cayenne, garlic, and jalapeño. 
-            Shipped ingredients: onion, bell peppers, jalapeños, vegetable broth, tomato sauce, salsa, tomato paste, 
-            Black beans, pinto beans, canned corn, red lentils, tex-mix spice mix, heavy cream
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: onion, bell peppers, jalapeños, vegetable broth, tomato sauce, salsa, tomato paste,
+              Black beans, pinto beans, canned corn, red lentils, tex-mix spice mix, heavy cream
+            </br>
           </p>
           <p class="mealDesc" id="vgnDesc3">
             Falafel Salad with Lemon Garlic Dressing is chickpea salad taken to the next level. This easy falafel recipe uses canned chickpeas, skips the deep fryer, and can be made in 30-minutes!
-            Shipped ingredients: chickpeas, scallions, cilantro, mint, garlic, cumin, coriander, flour, baking powder, mixed greens, cucumbers, tomatoes, onions, pita bread
+            <br>
+            <br>SHIPPED INGREDIENTS: chickpeas, scallions, cilantro, mint, garlic, cumin, coriander, flour, baking powder, mixed greens, cucumbers, tomatoes, onions, pita bread</br>
           </p>
           <p class="mealDesc" id="glutenDesc3">
             Moist, flavorful, and flakey baked salmon fillets. It’s seriously the easiest recipe to make.
-	        	shipped ingredients: salmon fillets, butter, garlic, lemon, parsley, dill
+	        	<br>
+            <br>SHIPPED INGREDIENTS: salmon fillets, butter, garlic, lemon, parsley, dill</br>
           </p>
         </div>
         <div class="mealTitle4">
-          <p class="mealTitle" id="ketoTitle4">Loaded cauliflower salad</p>
+          <p class="mealTitle" id="ketoTitle4">Loaded Cauliflower Salad</p>
           <p class="mealTitle" id="lacIntTitle4">Vegetable Frittata</p>
           <p class="mealTitle" id="noResTitle4">Roasted Double Salmon</p>
-          <p class="mealTitle" id="vegTitle4">Curry noodle soup</p>
+          <p class="mealTitle" id="vegTitle4">Curry Noodle Soup</p>
           <p class="mealTitle" id="vgnTitle4">Quinoa Bowl</p>
           <p class="mealTitle" id="glutenTitle4">Broccoli Salad</p>
         </div>
@@ -954,38 +983,48 @@
         <div class="mealDesc4">
           <p class="mealDesc" id="ketoDesc4">
             One of our favourites, this cauliflower salad is quick, simple and versatile. Made with bacon cheddar cheese and spices, or whatever you feel lke adding!
-		        shipped ingredients: cauliflower, bacon, cheddar cheese, mayonnaise, lemon juice, chives
+		        <br>
+            <br>SHIPPED INGREDIENTS: cauliflower, bacon, cheddar cheese, mayonnaise, lemon juice, chives</br>
           </p>
           <p class="mealDesc" id="lacIntDesc4">
             A frittata is an egg-based "pie" that works well for breakfast, brunch, lunch, dinner, or even sliced thinly for a savory appetizer. This easy recipe uses a medley of roasted veggies, fresh herbs, and a good sprinkle of creamy feta.
-		        shipped ingredients: eggs, bell peppers, zuchinni, green onions, brocolli, feta cheese, herb mix
+		        <br>
+            <br>SHIPPED INGREDIENTS: eggs, bell peppers, zuchinni, green onions, brocolli, feta cheese, herb mix</br>
           </p>
           <p class="mealDesc" id="noResDesc4">
             These salmon fillets are served with pan fried potatoes and buttery, dill-garlic veggies. And we’ve thrown in extra salmon in case you’re extra hungry.
-            Shipped ingredients: salmon fillets, potatoes, green beans, baby tomatoes, dill, garlic, butter
+            <br>
+            <br>SHIPPED INGREDIENTS: salmon fillets, potatoes, green beans, baby tomatoes, dill, garlic, butter</br>
           </p>
           <p class="mealDesc" id="vegDesc4">
             This aromatic, vegetarian curry is both tasty and easy to make. Packed with all of your curry favourites, we’re sure you’ll be back for seconds!
-            Shipped ingredients: coconut oil, garlic, ginger, red curry paste, coconut milk, vegetable broth, agave, rice noodles, tofu, broccoli, 
-            Bell peppers, lime juice, cilantro
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: coconut oil, garlic, ginger, red curry paste, coconut milk, vegetable broth, agave, rice noodles, tofu, broccoli,
+              Bell peppers, lime juice, cilantro
+            </br>
           </p>
           <p class="mealDesc" id="vgnDesc4">
             Quinoa and chickpeas pack this vegetarian grain bowl with plenty of plant-based protein. Whip up a batch of these flavorful grain bowls and pack them in lidded containers to stash in the fridge for easy, healthy grab-and-go lunches all week long.
-            Shipped ingredients: bell peppers, almonds, garlic, paprika, cumin, quinoa, onions, kalamata olives, 
-            Chickpeas, cucumbers, feta cheese, parsley
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: bell peppers, almonds, garlic, paprika, cumin, quinoa, onions, kalamata olives,
+              Chickpeas, cucumbers, feta cheese, parsley
+            </br>
           </p>
           <p class="mealDesc" id="glutenDesc4">
             Broccoli salad is a combination of broccoli, bacon, red onion, cranberries, sunflower seeds and goat cheese. And it’s topped with a creamy mayonnaise yogurt dressing.
-		        shipped ingredients: brocolli, bacon, red onion, dried cranberries, sunflower seeds, goat cheese
+		        <br>
+            <br>SHIPPED INGREDIENTS: brocolli, bacon, red onion, dried cranberries, sunflower seeds, goat cheese</br>
           </p>
         </div>
         <div class="mealTitle5">
-          <p class="mealTitle" id="ketoTitle5">Baked pork chops</p>
+          <p class="mealTitle" id="ketoTitle5">Baked Pork Chops</p>
           <p class="mealTitle" id="lacIntTitle5">
-            Spinach and mushroom barley pilaf
+            Spinach and Mushroom Barley Pilaf
           </p>
           <p class="mealTitle" id="noResTitle5">Squash and Bacon Alfredo</p>
-          <p class="mealTitle" id="vegTitle5">Breakfast egg casserole</p>
+          <p class="mealTitle" id="vegTitle5">Breakfast Egg Casserole</p>
           <p class="mealTitle" id="vgnTitle5">Creamy Garlic Pasta</p>
           <p class="mealTitle" id="glutenTitle5">Cauliflower Crust Pizza</p>
         </div>
@@ -1029,39 +1068,47 @@
         </div>
         <div class="mealDesc5">
           <p class="mealDesc" id="ketoDesc5">
-            Succulent, tender pork chop tomahawks.
-		        shipped ingredients: pork loin chops, rosemary, garlic, butter
+            Succulent, tender pork chop tomahawks. Simple and delicious.
+		        <br>
+            <br>SHIPPED INGREDIENTS: pork loin chops, rosemary, garlic, butter</br>
           </p>
           <p class="mealDesc" id="lacIntDesc5">
             This barley pilaf makes a nice light meal on its own, or a delicious side. 
-		        shipped ingredients: quick-cooking barley, onions, baby spinach, mushrooms, garlic, oregano
+		        <br>
+            <br>SHIPPED INGREDIENTS: quick-cooking barley, onions, baby spinach, mushrooms, garlic, oregano</br>
           </p>
           <p class="mealDesc" id="noResDesc5">
             This luscious linguine dish is extra comforting and cozy! Everyone loves alfredo, and this one gets a seasonal spin with smoky bacon, sweet squash and savoury sage.
-            Shipped ingredients: bacon strips, linguine, butternut squash, sage, cream, garlic, shallots, Parmesan cheese, 
-            Chicken broth, baby spinach
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: bacon strips, linguine, butternut squash, sage, cream, garlic, shallots, Parmesan cheese,
+              Chicken broth, baby spinach
+            </br>
           </p>
           <p class="mealDesc" id="vegDesc5">
             Here’s a deliciously comforting recipe that makes your kitchen smell like a cozy diner. It’s beautifully hearty, pairing cheesy hash browns with chili powder, garlic powder and cumin for massive savory flavor. Because it’s easy to make ahead, it’s super unfussy and low maintenance.
-            Shipped ingredients: hash browns, sour cream, eggs, milk, cheddar cheese, green onions, bell peppers, spice mix
+            <br>
+            <br>SHIPPED INGREDIENTS: hash browns, sour cream, eggs, milk, cheddar cheese, green onions, bell peppers, spice mix</br>
           </p>
           <p class="mealDesc" id="vgnDesc5">
             This easy garlic butter pasta is packed with flavor and comes together lightning fast! Fresh herbs pack in the flavor, while chickpeas add protein and bulk to this easy vegan dinner.
-            Shipped ingredients: fettuccine, vegan butter, garlic, parsley, chives, thyme, chickpeas, lemon juice, 
+            <br>
+            <br>SHIPPED INGREDIENTS: fettuccine, vegan butter, garlic, parsley, chives, thyme, chickpeas, lemon juice</br>
           </p>
           <p class="mealDesc" id="glutenDesc5">
             Cauliflower pizza crust is a delicious gluten-free, low-carb and keto pizza recipe. It’s a simple blend of cauliflower, eggs, cheese, and a few spices that’s flattened and baked into a golden crust. Freeze it for later or top it off with fresh ingredients for a healthy dinner recipe.
-		        shipped ingredients: cauliflower, mozzarella cheese, eggs, italian seasoning mix
+		        <br>
+            <br>SHIPPED INGREDIENTS: cauliflower, mozzarella cheese, eggs, italian seasoning mix</br>
           </p>
         </div>
         <div class="mealTitle6">
-          <p class="mealTitle" id="ketoTitle6">Keto chicken parmesan</p>
+          <p class="mealTitle" id="ketoTitle6">Keto Chicken Parmesan</p>
           <p class="mealTitle" id="lacIntTitle6">Pork & Okra Creole</p>
           <p class="mealTitle" id="noResTitle6">
-            Sticky ginger beef and rice bowl
+            Sticky Ginger Beef and Rice Bowl
           </p>
           <p class="mealTitle" id="vegTitle6">Vegetable Frittata</p>
-          <p class="mealTitle" id="vgnTitle6">Vegan hamburger</p>
+          <p class="mealTitle" id="vgnTitle6">Vegan Hamburger</p>
           <p class="mealTitle" id="glutenTitle6">Stuffed Peppers</p>
         </div>
         <div class="meal6">
@@ -1105,28 +1152,36 @@
         <div class="mealDesc6">
           <p class="mealDesc" id="ketoDesc6">
             No one can deny a good chicken parm. This version, coated with almond flour and lots of parmesan, is both keto-friendly and completely irresistible.
-		        shipped ingredients: chicken breast, almond flour, low-carb sugar-free tomato sauce, eggs, parmesean cheese, garlic powder, onion powder, oregano, basil
+		        <br>
+            <br>SHIPPED INGREDIENTS: chicken breast, almond flour, low-carb sugar-free tomato sauce, eggs, parmesean cheese, garlic powder, onion powder, oregano, basil</br>
           </p>
           <p class="mealDesc" id="lacIntDesc6">
             Enjoy this Creole Style Pork Stew that is chock full of flavor. Pork, sausage, tomato paste, seasonings and more make this a hearty and delicious stew.
-		        shipped ingredients: rice, boneless pork ribs, soup base, onion, celery stalks, flour, bell pepper garlic, sage, oregano
+		        <br>
+            <br>SHIPPED INGREDIENTS: rice, boneless pork ribs, soup base, onion, celery stalks, flour, bell pepper garlic, sage, oregano</br>
           </p>
           <p class="mealDesc" id="noResDesc6">
             This aromatic beef bowl is packed with tangy marinated veggies and fluffy jasmine rice. Drizzle over a tasty Japanese-inspired soy mayo, then stir all these vibrant ingredients together for a classic take-out experience at home!
-            Shipped ingredients: ground beef,  carrots, rice, shallots, soy sauce, ginger, rice vinegar, sugar snap peas,
-            Honey, mayonnaise, mini cucumbers
+            <br>
+            <br>
+              SHIPPED INGREDIENTS: ground beef,  carrots, rice, shallots, soy sauce, ginger, rice vinegar, sugar snap peas,
+              Honey, mayonnaise, mini cucumbers
+            </br>
           </p>
           <p class="mealDesc" id="vegDesc6">
             This easy vegetable frittata recipe is perfect for breakfast, brunch, lunch or a light evening meal! Vegetarian and low carb, this is a great recipe for make ahead meals and meal prep. Quick to make with simple ingredients.
-            Shipped ingredients: eggs, mushrooms, asparagus, baby tomatoes, Swiss cheese, onions, cilantro, basil, milk
+            <br>
+            <br>SHIPPED INGREDIENTS: eggs, mushrooms, asparagus, baby tomatoes, Swiss cheese, onions, cilantro, basil, milk</br>
           </p>
           <p class="mealDesc" id="vgnDesc6">
             Adding healthy legumes to your diet is no longer a hassle. These black bean burgers will bring to your table all the health benefits of black beans, plus a wonderful flavor, minus all the hard work.
-            Shipped ingredients: vegan hamburger patties, brioche buns, iceberg lettuce, tomatoes, onion, garlic aioli
+            <br>
+            <br>SHIPPED INGREDIENTS: vegan hamburger patties, brioche buns, iceberg lettuce, tomatoes, onion, garlic aioli</br>
           </p>
           <p class="mealDesc" id="glutenDesc6">
             These hearty, delicious vegan stuffed peppers have a flavorful vegetable and tofu crumble filling that resembles meat. They make for a balanced meal, with plenty of vegetables, plant-based protein and carbs.
-		        shipped ingredients: bell peppers, tomatoes, mushrooms, zucchini, vegan cheese, plant based pork sausage
+		        <br>
+            <br>SHIPPED INGREDIENTS: bell peppers, tomatoes, mushrooms, zucchini, vegan cheese, plant based pork sausage</br>
           </p>
         </div>
       </div>

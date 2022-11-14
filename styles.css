@@ -998,7 +998,6 @@ tr {
 }
 
 /*MEALS SECTION*/
-
 .mealsSection {
   padding: 0 15px;
   flex-wrap: wrap;
@@ -1007,8 +1006,26 @@ tr {
 .mealsGrid {
   display: grid;
   justify-items: center;
-  grid-template-columns: 6;
+  grid-template-columns: auto 200px auto 200px auto 200px;
   grid-template-rows: 4;
+  column-gap: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .mealsGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+#defaultMessage {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .mealTitle {
@@ -1018,18 +1035,28 @@ tr {
   font-size: 25px;
   font-style: italic;
   font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .mealImage {
   display: none;
   width: 350px;
   height: 350px;
+  margin-bottom: 15px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .mealDesc {
   display: none;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid none;
+  border-color: black;
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .mealTitle1,
