@@ -1006,18 +1006,9 @@ tr {
 .mealsGrid {
   display: grid;
   justify-items: center;
-  grid-template-columns: auto 200px auto 200px auto 200px;
+  grid-template-columns: 6;
   grid-template-rows: 4;
   column-gap: 15px;
-}
-
-@media screen and (max-width: 1150px) {
-  .mealsGrid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
 }
 
 #defaultMessage {
@@ -1057,6 +1048,7 @@ tr {
   padding: 15px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
 }
 
 .mealTitle1,
@@ -1125,9 +1117,22 @@ tr {
   grid-row: 4;
 }
 
+@media screen and (max-width: 1150px) {
+  .mealsGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .mealDesc {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1750px) {
   .mealsGrid {
-    grid-template-columns: auto 200px auto 200px;
+    grid-template-columns: 4;
     grid-template-rows: 6;
   }
 
