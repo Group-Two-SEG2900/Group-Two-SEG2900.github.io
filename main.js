@@ -43,12 +43,12 @@ function toggleDisplay(id) {
 
 // Change pricing table contents on click
 
-var last_value = 'protein'
+var last = 'protein'
 
 function change_table(value) {
-    document.getElementById(last_value).style.display='none';
+    document.getElementById(last).style.display='none';
     document.getElementById(value).style.display='block';
-    last_value = value;
+    last = value;
 }
 
 // Change displayed meals to match the meal restriction on click
