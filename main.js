@@ -51,21 +51,12 @@ function hideDisplay(id) {
 
 // Change pricing table contents on click
 
-<<<<<<< HEAD
 var last = 'protein'
 
 function change_table(value) {
-    document.getElementById(last).style.display='none';
-    document.getElementById(value).style.display='block';
+    document.getElementById(last).style.display = 'none';
+    document.getElementById(value).style.display = 'block';
     last = value;
-=======
-var last_value = "protein";
-
-function change_table(value) {
-  document.getElementById(last_value).style.display = "none";
-  document.getElementById(value).style.display = "block";
-  last_value = value;
->>>>>>> 0eb6476ca6e7f873970c7a2c72a5099d1dd44ac3
 }
 
 // Change displayed meals to match the meal restriction on click
@@ -73,43 +64,18 @@ function change_table(value) {
 var last_value = "vgn";
 
 function changeMeals(value) {
-  document.getElementById(last_value + "Title1").style.display = "none";
-  document.getElementById(last_value + "Image1").style.display = "none";
-  document.getElementById(last_value + "Desc1").style.display = "none";
-  document.getElementById(last_value + "Title2").style.display = "none";
-  document.getElementById(last_value + "Image2").style.display = "none";
-  document.getElementById(last_value + "Desc2").style.display = "none";
-  document.getElementById(last_value + "Title3").style.display = "none";
-  document.getElementById(last_value + "Image3").style.display = "none";
-  document.getElementById(last_value + "Desc3").style.display = "none";
-  document.getElementById(last_value + "Title4").style.display = "none";
-  document.getElementById(last_value + "Image4").style.display = "none";
-  document.getElementById(last_value + "Desc4").style.display = "none";
-  document.getElementById(last_value + "Title5").style.display = "none";
-  document.getElementById(last_value + "Image5").style.display = "none";
-  document.getElementById(last_value + "Desc5").style.display = "none";
-  document.getElementById(last_value + "Title6").style.display = "none";
-  document.getElementById(last_value + "Image6").style.display = "none";
-  document.getElementById(last_value + "Desc6").style.display = "none";
 
-  document.getElementById(value + "Title1").style.display = "block";
-  document.getElementById(value + "Image1").style.display = "block";
-  document.getElementById(value + "Desc1").style.display = "block";
-  document.getElementById(value + "Title2").style.display = "block";
-  document.getElementById(value + "Image2").style.display = "block";
-  document.getElementById(value + "Desc2").style.display = "block";
-  document.getElementById(value + "Title3").style.display = "block";
-  document.getElementById(value + "Image3").style.display = "block";
-  document.getElementById(value + "Desc3").style.display = "block";
-  document.getElementById(value + "Title4").style.display = "block";
-  document.getElementById(value + "Image4").style.display = "block";
-  document.getElementById(value + "Desc4").style.display = "block";
-  document.getElementById(value + "Title5").style.display = "block";
-  document.getElementById(value + "Image5").style.display = "block";
-  document.getElementById(value + "Desc5").style.display = "block";
-  document.getElementById(value + "Title6").style.display = "block";
-  document.getElementById(value + "Image6").style.display = "block";
-  document.getElementById(value + "Desc6").style.display = "block";
+    for (var i = 1; i <= 6; i++) {
+        document.getElementById(last_value + "Title" + i).style.display = "none";
+        document.getElementById(last_value + "Image" + i).style.display = "none";
+        document.getElementById(last_value + "Desc" + i).style.display = "none";
+    }
 
-  last_value = value;
+    for (var i = 1; i <= 6; i++) {
+        document.getElementById(value + "Title" + i).style.display = "block";
+        document.getElementById(value + "Image" + i).style.display = "block";
+        document.getElementById(value + "Desc" + i).style.display = "block";
+    }
+
+    last_value = value;
 }
