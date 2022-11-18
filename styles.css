@@ -663,7 +663,7 @@ div.button {
 }
 
 .mplanhead {
-  font-size: 50px;
+  font-size: 35px;
   padding: 10px 10px;
   text-align: center;
   margin-top: 3rem;
@@ -671,7 +671,7 @@ div.button {
 }
 @media screen and (max-width: 900px) {
   .mplanhead {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -865,6 +865,10 @@ div.mpw {
 tr {
   text-align: center;
   align-items: center;
+}
+
+.about_images td {
+  width: 300px;
 }
 
 .about_table {
