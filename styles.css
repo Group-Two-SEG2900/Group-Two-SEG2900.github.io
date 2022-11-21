@@ -510,7 +510,6 @@ body {
   grid-column: 3;
   grid-row: 1;
 }
-
 .mpBigContainer {
   display: grid;
   margin-top: 3rem;

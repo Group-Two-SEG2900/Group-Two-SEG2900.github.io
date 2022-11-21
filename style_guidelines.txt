@@ -1,0 +1,31 @@
+STYLE GUIDELINES
+
+general styles:
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+
+colors used:
+  --beige1: #f2e2c9ff;
+  --beige2: #edd8b3ff;
+  --hoverbeige: rgb(230, 207, 167);
+  --beige3: rgb(243, 199, 124);
+  --beige4: rgb(234, 183, 96);
+  --nicered: #f64f4f;
+  --green: #466c14ff;
+  --lightgreen: #689c23ff;
+  --verylightgreen: #a5ff8c;
+  --pukegreen: #5a670aff;
+  --maybeorange: rgb(187, 100, 12);
+  --darkgreen: rgb(0, 94, 59);
+  --darkergreen: rgb(0, 76, 48);
+
+Page should mostly be made from the 5 different beige types.
+Buttons should be dark green. The main_button class contains default button format.
+
+Website should be mobile responsive, consider different screen sizes using > @media screen and (max-width: __px)
+Avoid using very general dividers, make sure the targetted element is well identified
+
+A protection layer has been placed on main branch to avoid unverified commits.
+At least one other person will need to review the changes and approve the pull request before a merge.

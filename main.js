@@ -37,6 +37,7 @@ function toggleDisplay(id) {
   if (el.style.display === "none") {
     el.style.display = "block";
     scroll;
+    
   }
 }
 
@@ -46,6 +47,7 @@ function hideDisplay(id) {
   if (el.style.display === "block") {
     el.style.display = "none";
     scroll;
+
   }
 }
 
