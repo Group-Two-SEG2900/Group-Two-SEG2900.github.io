@@ -37,15 +37,47 @@ function toggleDisplay(id) {
   if (el.style.display === "none") {
     el.style.display = "block";
     scroll;
+    
+  }
+}
+
+// Hide elements (mainly used for the default message if the user does not enter enough info in the meal plan maker)
+function hideDisplay(id) {
+  var el = document.getElementById(id);
+  if (el.style.display === "block") {
+    el.style.display = "none";
+    scroll;
+
   }
 }
 
 // Change pricing table contents on click
 
-var last_value = "protein";
+var last = 'protein'
 
 function change_table(value) {
-  document.getElementById(last_value).style.display = "none";
-  document.getElementById(value).style.display = "block";
-  last_value = value;
+    document.getElementById(last).style.display = 'none';
+    document.getElementById(value).style.display = 'block';
+    last = value;
+}
+
+// Change displayed meals to match the meal restriction on click
+
+var last_value = "vgn";
+
+function changeMeals(value) {
+
+    for (var i = 1; i <= 6; i++) {
+        document.getElementById(last_value + "Title" + i).style.display = "none";
+        document.getElementById(last_value + "Image" + i).style.display = "none";
+        document.getElementById(last_value + "Desc" + i).style.display = "none";
+    }
+
+    for (var i = 1; i <= 6; i++) {
+        document.getElementById(value + "Title" + i).style.display = "block";
+        document.getElementById(value + "Image" + i).style.display = "block";
+        document.getElementById(value + "Desc" + i).style.display = "block";
+    }
+
+    last_value = value;
 }
