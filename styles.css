@@ -449,13 +449,13 @@ body {
     ),
     url("/images/burner.jpeg");
 }
-.green_god {
+.green_warrior {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url("/images/green_god.jpeg");
+    url("/images/green_warrior.jpeg");
 }
 .gainer h3 {
   background-color: salmon;
@@ -469,10 +469,10 @@ body {
 .burner p {
   background-color: rgb(181, 181, 0);
 }
-.green_god h3 {
+.green_warrior h3 {
   background-color: rgb(71, 197, 71);
 }
-.green_god p {
+.green_warrior p {
   background-color: rgb(67, 186, 67);
 }
 
